@@ -299,7 +299,7 @@ a {
   margin-top: 23px;
 }
 /* line 271, ../sass/_layout.scss */
-.main input#numBrands, .main textarea#numBrands {
+.main input#numBrands0, .main input#numBrands1, .main input#numBrands2, .main textarea#numBrands0, .main textarea#numBrands1, .main textarea#numBrands2 {
   width: 300px;
   height: 80px;
   margin-left: 45px;
@@ -345,7 +345,7 @@ a {
 /***end form styles***/
 @media (max-width: 500px) {
   /* line 336, ../sass/_layout.scss */
-  .main input#numBrands, .main textarea#numBrands {
+  .main input#numBrands0, .main input#numBrands1, .main input#numBrands2, .main textarea#numBrands0, .main textarea#numBrands1, .main textarea#numBrands2 {
     width: 100%;
   }
   /* line 341, ../sass/_layout.scss */
@@ -423,7 +423,7 @@ a {
     float: none;
   }
   /* line 423, ../sass/_layout.scss */
-  .main input#numBrands, .main textarea#numBrands {
+  .main input#numBrands0, .main input#numBrands1, .main input#numBrands2, .main textarea#numBrands0, .main textarea#numBrands1, .main textarea#numBrands2 {
     margin-right: auto;
     margin-left: auto;
   }
