@@ -656,6 +656,23 @@
         </script>
 
         <script>
+
+        function slideFunc(uiVal, curNum, ele){
+
+
+            console.log( uiVal );
+            console.log("current number = " + curNum);
+
+            if(uiVal > curNum) {
+                ele.find("[data-num='" + (uiVal) + "']").addClass('full').html('<span></span>');
+            } else if(uiVal < curNum) {
+                ele.find("[data-num='" + (uiVal + 1) + "']").removeClass('full').html('');
+            }
+
+
+        }
+
+
           $(function() {
 
             var currentNum0 = 0,
@@ -671,14 +688,9 @@
               step: 1,
               slide: function( event, ui ) {
 
-                console.log( ui.value );
-                console.log("current number = " + currentNum0);
+                var circ = $( "#circles0" );
 
-                if(ui.value > currentNum0) {
-                    $( "#circles0" ).find("[data-num='" + (ui.value) + "']").addClass('full').html('<span></span>');
-                } else if(ui.value < currentNum0) {
-                    $( "#circles0" ).find("[data-num='" + (ui.value + 1) + "']").removeClass('full').html('');
-                }
+                slideFunc(ui.value, currentNum0, circ);
 
                 currentNum0 = ui.value;
 
@@ -693,14 +705,9 @@
               step: 1,
               slide: function( event, ui ) {
 
-                console.log( ui.value );
-                console.log("current number = " + currentNum1);
+                var circ = $( "#circles1" );
 
-                if(ui.value > currentNum1) {
-                    $( "#circles1" ).find("[data-num='" + ui.value + "']").addClass('full').html('<span></span>');
-                } else if(ui.value < currentNum1) {
-                    $( "#circles1" ).find("[data-num='" + (ui.value + 1) + "']").removeClass('full').html('');
-                }
+                slideFunc(ui.value, currentNum1, circ);
 
                 currentNum1 = ui.value;
 
@@ -715,14 +722,9 @@
               step: 1,
               slide: function( event, ui ) {
 
-                console.log( ui.value );
-                console.log("current number = " + currentNum2);
+                var circ = $( "#circles2" );
 
-                if(ui.value > currentNum2) {
-                    $( "#circles2" ).find("[data-num='" + ui.value + "']").addClass('full').html('<span></span>');
-                } else if(ui.value < currentNum2) {
-                    $( "#circles2" ).find("[data-num='" + (ui.value + 1) + "']").removeClass('full').html('');
-                }
+                slideFunc(ui.value, currentNum2, circ);
 
                 currentNum2 = ui.value;
 
@@ -737,14 +739,10 @@
               step: 1,
               slide: function( event, ui ) {
 
-                console.log( ui.value );
-                console.log("current number = " + currentNum3);
+                
+                var circ = $( "#circles3" );
 
-                if(ui.value > currentNum3) {
-                    $( "#circles3" ).find("[data-num='" + ui.value + "']").addClass('full').html('<span></span>');
-                } else if(ui.value < currentNum3) {
-                    $( "#circles3" ).find("[data-num='" + (ui.value + 1) + "']").removeClass('full').html('');
-                }
+                slideFunc(ui.value, currentNum3, circ);
 
                 currentNum3 = ui.value;
 
@@ -759,14 +757,9 @@
               step: 1,
               slide: function( event, ui ) {
 
-                console.log( ui.value );
-                console.log("current number = " + currentNum4);
+                var circ = $( "#circles4" );
 
-                if(ui.value > currentNum4) {
-                    $( "#circles4" ).find("[data-num='" + ui.value + "']").addClass('full').html('<span></span>');
-                } else if(ui.value < currentNum4) {
-                    $( "#circles4" ).find("[data-num='" + (ui.value + 1) + "']").removeClass('full').html('');
-                }
+                slideFunc(ui.value, currentNum4, circ);
 
                 currentNum4 = ui.value;
 
