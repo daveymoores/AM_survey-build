@@ -335,7 +335,7 @@
                         <p class="rob_light"><span class="q_num">5</span> How often do you buy a new watch ?</p>
 
                         <div class="slider_circles radio">
-                            <div class="radio_btn"><a href="#_" data-num="1" class="full"><span></span></a><p>At least once per year</p></div>
+                            <div class="radio_btn"><a href="#_" data-num="1" class="full"><span></span></a><p>Every year</p></div>
                             <div class="radio_btn"><a href="#_" data-num="2"></a><p>Every 2 years</p></div>
                             <div class="radio_btn"><a href="#_" data-num="3"></a><p>3</p></div>
                             <div class="radio_btn"><a href="#_" data-num="4"></a><p>5</p></div>
@@ -660,8 +660,8 @@
         function slideFunc(uiVal, curNum, ele){
 
 
-            console.log( uiVal );
-            console.log("current number = " + curNum);
+            //console.log( uiVal );
+            //console.log("current number = " + curNum);
 
             if(uiVal > curNum) {
                 ele.find("[data-num='" + (uiVal) + "']").addClass('full').html('<span></span>');
@@ -688,11 +688,43 @@
               step: 1,
               slide: function( event, ui ) {
 
-                var circ = $( "#circles0" );
+                // var circ = $( "#circles0" );
 
-                slideFunc(ui.value, currentNum0, circ);
+                // slideFunc(ui.value, currentNum0, circ);
 
-                currentNum0 = ui.value;
+                // currentNum0 = ui.value;
+
+
+                $( "#circles0 > li" ).each(function(i){
+
+                    
+
+                    if(i == ui.value) {
+                        return false;
+                    } else {
+                        $(this).parent().find("[data-num='" + (i+1) + "']").addClass('full').html('<span></span>');
+                    }
+
+                    console.log(i);
+                    console.log(ui.value);
+
+                });
+
+              },
+              change: function( event, ui ) {
+
+                // $( "#circles0 > li" ).each(function(i){
+
+                //     $(this).parent().find("[data-num='" + i + "']").addClass('full').html('<span></span>');
+
+                //     if(i == ui.value) {
+                //         return false;
+                //     }
+
+                //     console.log(i);
+                //     console.log(ui.value);
+
+                // });
 
               }
             });
