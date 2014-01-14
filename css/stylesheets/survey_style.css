@@ -1,0 +1,638 @@
+@font-face {
+  font-family: 'robotolight';
+  src: url("../../fonts/roboto-light-webfont.eot");
+  src: url("../../fonts/roboto-light-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/roboto-light-webfont.woff") format("woff"), url("../../fonts/roboto-light-webfont.ttf") format("truetype"), url("../../fonts/roboto-light-webfont.svg#robotolight") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'robotoregular';
+  src: url("../../fonts/roboto-regular-webfont.eot");
+  src: url("../../fonts/roboto-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/roboto-regular-webfont.woff") format("woff"), url("../../fonts/roboto-regular-webfont.ttf") format("truetype"), url("../../fonts/roboto-regular-webfont.svg#robotoregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'bebas_neueregular';
+  src: url("../../fonts/bebasneue-webfont.eot");
+  src: url("../../fonts/bebasneue-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/bebasneue-webfont.woff") format("woff"), url("../../fonts/bebasneue-webfont.ttf") format("truetype"), url("../../fonts/bebasneue-webfont.svg#bebas_neueregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/***foundation rules***/
+/* line 11, ../sass/_layout.scss */
+.wrapper {
+  margin: 0px auto;
+}
+
+/* line 15, ../sass/_layout.scss */
+button, .button {
+  cursor: pointer;
+  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  line-height: normal;
+  margin: 0 0 1.25rem;
+  position: relative;
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
+  padding-top: 1rem;
+  padding-right: 2rem;
+  padding-bottom: 1.0625rem;
+  padding-left: 2rem;
+  font-size: 1rem;
+  /*     @else                            { font-size: $padding - rem-calc(2); } */
+  background-color: #2ba6cb;
+  border-color: #2795b6;
+  color: white;
+  -webkit-transition: background-color 300ms ease-out;
+  -moz-transition: background-color 300ms ease-out;
+  transition: background-color 300ms ease-out;
+  padding-top: 1.0625rem;
+  padding-bottom: 1rem;
+  -webkit-appearance: none;
+  border: none;
+  font-weight: normal !important;
+}
+
+/* line 42, ../sass/_layout.scss */
+button:hover, button:focus, .button:hover, .button:focus {
+  background-color: #2795b6;
+}
+
+/* line 44, ../sass/_layout.scss */
+button:hover, button:focus, .button:hover, .button:focus {
+  color: white;
+}
+
+/* We use this to get basic styling on all basic form elements */
+/* line 50, ../sass/_layout.scss */
+input[type="text"],
+textarea {
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  background-color: white;
+  font-family: inherit;
+  border: 1px solid #cccccc;
+  -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+  color: rgba(0, 0, 0, 0.75);
+  display: block;
+  font-size: 0.875rem;
+  margin: 0 0 1rem 0;
+  padding: 0.5rem;
+  height: 2.3125rem;
+  width: 100%;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: -webkit-box-shadow 0.45s, border-color 0.45s ease-in-out;
+  -moz-transition: -moz-box-shadow 0.45s, border-color 0.45s ease-in-out;
+  transition: box-shadow 0.45s, border-color 0.45s ease-in-out;
+}
+
+/* line 73, ../sass/_layout.scss */
+input[type="text"]:focus,
+textarea:focus {
+  -webkit-box-shadow: 0 0 5px #999999;
+  -moz-box-shadow: 0 0 5px #999999;
+  box-shadow: 0 0 5px #999999;
+  border-color: #999999;
+}
+
+/* line 79, ../sass/_layout.scss */
+input[type="text"]:focus,
+textarea:focus {
+  background: #fafafa;
+  border-color: #999999;
+  outline: none;
+}
+
+/* line 84, ../sass/_layout.scss */
+input[type="text"][disabled],
+textarea[disabled] {
+  background-color: #dddddd;
+}
+
+/**end foundation rules**/
+/* line 91, ../sass/_layout.scss */
+body {
+  background-color: #efefef;
+}
+
+/**responsive images**/
+/* line 96, ../sass/_layout.scss */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* line 102, ../sass/_layout.scss */
+.divider_img img {
+  margin: 0px auto;
+  display: block;
+}
+
+/**end responsive images**/
+/* line 109, ../sass/_layout.scss */
+a {
+  outline: 0;
+  /**remove dotted lines**/
+}
+
+/**font selectors**/
+/* line 114, ../sass/_layout.scss */
+.rob_light {
+  font-family: 'robotolight';
+}
+
+/**end font selectors**/
+/**removeable styles**/
+/**end removeable styles**/
+/* line 123, ../sass/_layout.scss */
+.main {
+  width: 1079px;
+  background-color: white;
+  padding-top: 0px;
+  	/*.divider_dots {
+  		margin: 30px auto;
+  		width: auto;
+  		list-style: none;
+  
+  		li {
+  			width: 15px;
+  			height: 0;
+  			padding-bottom: 15px;
+  			-moz-border-radius: 50%;
+  			-webkit-border-radius: 50%;
+  			border-radius: 50%;
+  			background-color: $aqua_marine;
+  			margin-right: 15px;
+  			float: left;
+  			position: absolute;
+  			padding: 0px;
+  			left: 50%;
+  			margin-left: -45px;
+  			margin-top: 60px;		
+  		}
+  	}*/
+}
+/* line 128, ../sass/_layout.scss */
+.main article {
+  width: 100%;
+}
+/* line 131, ../sass/_layout.scss */
+.main article section {
+  min-height: 170px;
+}
+/* line 136, ../sass/_layout.scss */
+.main section, .main footer {
+  padding: 20px 10%;
+  /*background: white url(../../img/drop_shadow-divider.jpg) bottom center no-repeat;*/
+  margin-bottom: 0px;
+}
+/* line 141, ../sass/_layout.scss */
+.main section h2, .main footer h2 {
+  line-height: 34px;
+  font-size: 22px;
+  color: #465866;
+  margin-bottom: 30px;
+}
+/* line 149, ../sass/_layout.scss */
+.main p {
+  color: #465866;
+  line-height: 43px;
+  font-size: 20px;
+  margin-bottom: 40px;
+  display: block;
+}
+/* line 156, ../sass/_layout.scss */
+.main p .q_num {
+  font-family: 'bebas_neueregular';
+  display: block;
+  color: white;
+  font-size: 30px;
+  float: left;
+  margin-right: 10px;
+  text-align: center;
+  height: 42px;
+  width: 42px;
+  -moz-border-radius: 21px;
+  -webkit-border-radius: 21px;
+  border-radius: 21px;
+  background-color: #0a4772;
+  /*width: 5%;
+  height: 0;
+  padding-bottom: 5%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  background-color: $rich_blue;*/
+}
+/* line 182, ../sass/_layout.scss */
+.main .divider_dots {
+  width: 100%;
+  margin-bottom: 80px;
+  margin-top: 30px;
+}
+/* line 187, ../sass/_layout.scss */
+.main .divider_dots.last {
+  margin-bottom: 0px;
+}
+/* line 191, ../sass/_layout.scss */
+.main .divider_dots img {
+  margin: 0px auto;
+  display: block;
+}
+/* line 197, ../sass/_layout.scss */
+.main .divider_strip {
+  margin-top: 40px;
+}
+/* line 225, ../sass/_layout.scss */
+.main footer p {
+  font-family: 'robotolight';
+  font-size: 18px;
+  line-height: 26px;
+}
+/* line 232, ../sass/_layout.scss */
+.main .large-8 {
+  width: 70%;
+  float: left;
+  margin-right: 5%;
+}
+/* line 238, ../sass/_layout.scss */
+.main .large-4 {
+  width: 25%;
+  float: right;
+}
+/* line 242, ../sass/_layout.scss */
+.main .large-4 .button {
+  width: auto;
+  background-color: #ff4400;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 10px;
+  font-family: 'bebas_neueregular';
+  font-size: 55px;
+  display: block;
+  margin-top: 20%;
+}
+/* line 255, ../sass/_layout.scss */
+.main .left {
+  float: left;
+}
+/* line 259, ../sass/_layout.scss */
+.main input, .main textarea {
+  border-radius: 3px;
+  font-size: 16px;
+  font-family: 'robotolight';
+}
+/* line 264, ../sass/_layout.scss */
+.main input#numWatches, .main textarea#numWatches {
+  width: 50px;
+  float: left;
+  margin-left: 20px;
+  margin-top: 23px;
+}
+/* line 271, ../sass/_layout.scss */
+.main input#numBrands, .main textarea#numBrands {
+  width: 300px;
+  height: 80px;
+  margin-left: 45px;
+}
+
+/***form styles***/
+/* line 285, ../sass/_layout.scss */
+.main form {
+  font-family: 'robotolight';
+  font-size: 18px;
+  line-height: 26px;
+  color: #465866;
+}
+/* line 291, ../sass/_layout.scss */
+.main form label {
+  margin-bottom: 10px;
+  display: block;
+}
+/* line 302, ../sass/_layout.scss */
+.main form legend {
+  display: none;
+}
+/* line 306, ../sass/_layout.scss */
+.main form .large-4 {
+  width: 30.333%;
+  padding-left: 3%;
+}
+/* line 311, ../sass/_layout.scss */
+.main form .large-4 input {
+  margin-right: 10%;
+}
+/* line 315, ../sass/_layout.scss */
+.main form .large-4.middle {
+  padding-left: 1.5%;
+  padding-right: 1.5%;
+}
+/* line 320, ../sass/_layout.scss */
+.main form .large-4.right {
+  padding-left: 0%;
+  padding-right: 3%;
+}
+
+/***end form styles***/
+@media (max-width: 500px) {
+  /* line 336, ../sass/_layout.scss */
+  .main input#numBrands, .main textarea#numBrands {
+    width: 100%;
+  }
+  /* line 341, ../sass/_layout.scss */
+  .main .large-4 .button {
+    font-size: 45px;
+  }
+  /* line 343, ../sass/_layout.scss */
+  .main .slider_circles {
+    height: 3px;
+  }
+  /* line 346, ../sass/_layout.scss */
+  .main .slider_circles li {
+    width: 5%;
+    height: 0;
+    padding-bottom: 5%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    background-color: white;
+    box-shadow: 0px 0px 0pt 2.5pt #868b95;
+    float: left;
+    margin-right: 5.55%;
+    margin-top: -2%;
+  }
+}
+@media (max-width: 870px) {
+  /* line 365, ../sass/_layout.scss */
+  .main {
+    width: 100%;
+  }
+  /* line 368, ../sass/_layout.scss */
+  .main form {
+    font-size: 16px;
+  }
+  /* line 371, ../sass/_layout.scss */
+  .main form label {
+    margin-bottom: 10px;
+    display: block;
+  }
+  /* line 382, ../sass/_layout.scss */
+  .main form .large-4 {
+    width: 100%;
+    padding-left: 0%;
+  }
+  /* line 387, ../sass/_layout.scss */
+  .main form .large-4 input {
+    margin-right: 10%;
+  }
+  /* line 391, ../sass/_layout.scss */
+  .main form .large-4.middle {
+    padding-left: 0%;
+    padding-right: 0%;
+  }
+  /* line 396, ../sass/_layout.scss */
+  .main form .large-4.right {
+    padding-left: 0%;
+    padding-right: 0%;
+  }
+  /* line 403, ../sass/_layout.scss */
+  .main .last {
+    margin-bottom: 0px;
+  }
+  /* line 407, ../sass/_layout.scss */
+  .main .left {
+    float: none;
+  }
+  /* line 410, ../sass/_layout.scss */
+  .main .left input {
+    float: none;
+  }
+  /* line 417, ../sass/_layout.scss */
+  .main input#numWatches, .main textarea#numWatches {
+    margin-left: auto;
+    margin-right: auto;
+    float: none;
+  }
+  /* line 423, ../sass/_layout.scss */
+  .main input#numBrands, .main textarea#numBrands {
+    margin-right: auto;
+    margin-left: auto;
+  }
+  /* line 429, ../sass/_layout.scss */
+  .main .large-8, .main .large-4 {
+    width: 100%;
+    float: none;
+  }
+  /* line 433, ../sass/_layout.scss */
+  .main .large-8 .button, .main .large-4 .button {
+    width: 50%;
+    margin: auto;
+    float: none;
+    display: block;
+  }
+  /* line 441, ../sass/_layout.scss */
+  .main p {
+    text-align: center;
+    line-height: 25px;
+    font-size: 16px;
+  }
+  /* line 446, ../sass/_layout.scss */
+  .main p .q_num {
+    float: none;
+    margin: 0px auto 20px;
+    line-height: 44px;
+  }
+  /* line 453, ../sass/_layout.scss */
+  .main .slider_circles.radio .radio_btn {
+    width: 50%;
+  }
+  /* line 456, ../sass/_layout.scss */
+  .main .slider_circles.radio .radio_btn a {
+    width: 20%;
+    height: 0px;
+    padding-bottom: 20%;
+    float: none;
+    display: block;
+    margin: 0px auto;
+  }
+  /* line 465, ../sass/_layout.scss */
+  .main .slider_circles.radio .radio_btn p {
+    float: none;
+    margin-left: 0px;
+  }
+  /* line 473, ../sass/_layout.scss */
+  .main .agree li {
+    width: 32%;
+  }
+  /* line 478, ../sass/_layout.scss */
+  .main footer p {
+    font-size: 16px;
+  }
+
+  /* line 483, ../sass/_layout.scss */
+  .main section h2, .main footer h2 {
+    line-height: 26px;
+    font-size: 16px;
+    color: #465866;
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 1079px) {
+  /* line 498, ../sass/_layout.scss */
+  .main {
+    width: 100%;
+  }
+}
+/**slider-colors**/
+/**end slider colours**/
+/* line 7, ../sass/_sliders.scss */
+.drag {
+  background-color: transparent;
+  background-image: none;
+  border: none;
+}
+/* line 12, ../sass/_sliders.scss */
+.drag .ui-slider-handle {
+  background-color: transparent;
+  background-image: none;
+  border: none;
+  cursor: pointer;
+  width: 4%;
+  height: 0;
+  padding-bottom: 4%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  outline: none;
+}
+
+/* line 27, ../sass/_sliders.scss */
+.slider_container {
+  padding: 0px 15px;
+  margin-top: -10px;
+}
+
+/* line 32, ../sass/_sliders.scss */
+#slider_wrapper {
+  margin-top: 10px;
+}
+
+/* line 36, ../sass/_sliders.scss */
+.agree {
+  text-align: center;
+  padding-left: 0px;
+  color: #717070;
+  font-size: 12px;
+}
+/* line 42, ../sass/_sliders.scss */
+.agree li {
+  display: inline-block;
+  margin: 5px 0 5px 0;
+  width: 33%;
+  font-family: 'robotoregular';
+  font-size: 12px;
+}
+/* line 49, ../sass/_sliders.scss */
+.agree li:nth-child(3) {
+  text-align: right;
+}
+/* line 53, ../sass/_sliders.scss */
+.agree li:nth-child(1) {
+  text-align: left;
+}
+
+/* line 60, ../sass/_sliders.scss */
+.slider_circles {
+  height: 4px;
+  width: 100%;
+  background-color: #868b95;
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+  margin-top: 30px;
+}
+/* line 70, ../sass/_sliders.scss */
+.slider_circles li {
+  width: 4%;
+  height: 0;
+  padding-bottom: 4%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  background-color: white;
+  /*border: 4px solid #868b95;*/
+  box-shadow: 0px 0px 0pt 2.5pt #868b95;
+  float: left;
+  margin-right: 6.666%;
+  margin-top: -2%;
+}
+/* line 84, ../sass/_sliders.scss */
+.slider_circles li.last {
+  margin-right: 0px;
+  float: right;
+}
+/* line 90, ../sass/_sliders.scss */
+.slider_circles li.full span {
+  display: block;
+  width: 81%;
+  height: 0;
+  padding-bottom: 81%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  background-color: #ff4400;
+  margin: auto;
+  margin-top: 9%;
+}
+/* line 106, ../sass/_sliders.scss */
+.slider_circles.radio {
+  background-color: transparent;
+}
+/* line 109, ../sass/_sliders.scss */
+.slider_circles.radio .radio_btn {
+  width: 33.333%;
+  margin-bottom: 6%;
+  float: left;
+}
+/* line 114, ../sass/_sliders.scss */
+.slider_circles.radio .radio_btn p {
+  float: left;
+  line-height: 14px;
+  margin-left: 4%;
+  font-size: 16px;
+  font-family: 'robotolight';
+}
+/* line 122, ../sass/_sliders.scss */
+.slider_circles.radio .radio_btn a {
+  width: 14%;
+  height: 0;
+  padding-bottom: 14%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  background-color: white;
+  border: 4px solid #868b95;
+  float: left;
+}
+/* line 135, ../sass/_sliders.scss */
+.slider_circles.radio .radio_btn a.full span {
+  background-color: #85c833;
+  display: block;
+  width: 81%;
+  height: 0;
+  padding-bottom: 81%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  margin: auto;
+  margin-top: 9%;
+}

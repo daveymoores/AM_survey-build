@@ -1,0 +1,504 @@
+$light_grey: #efefef;
+$dark_blue: #465866;
+$rich_blue: #0A4772;
+$rich_green: #85C833;
+$aqua_marine: #04D8C7;
+$orange: #ff4400;
+
+
+/***foundation rules***/
+
+.wrapper {
+	margin: 0px auto; //wrapper margin overide
+}
+
+button, .button {
+  cursor: pointer;
+  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  line-height: normal;
+  margin: 0 0 1.25rem;
+  position: relative;
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
+  padding-top: 1rem;
+  padding-right: 2rem;
+  padding-bottom: 1.0625rem;
+  padding-left: 2rem;
+  font-size: 1rem;
+  /*     @else                            { font-size: $padding - rem-calc(2); } */
+  background-color: #2ba6cb;
+  border-color: #2795b6;
+  color: white;
+  -webkit-transition: background-color 300ms ease-out;
+  -moz-transition: background-color 300ms ease-out;
+  transition: background-color 300ms ease-out;
+  padding-top: 1.0625rem;
+  padding-bottom: 1rem;
+  -webkit-appearance: none;
+  border: none;
+  font-weight: normal !important; }
+  button:hover, button:focus, .button:hover, .button:focus {
+    background-color: #2795b6; }
+  button:hover, button:focus, .button:hover, .button:focus {
+    color: white; }
+
+
+/* We use this to get basic styling on all basic form elements */
+input[type="text"],
+textarea {
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  background-color: white;
+  font-family: inherit;
+  border: 1px solid #cccccc;
+  -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+  color: rgba(0, 0, 0, 0.75);
+  display: block;
+  font-size: 0.875rem;
+  margin: 0 0 1rem 0;
+  padding: 0.5rem;
+  height: 2.3125rem;
+  width: 100%;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: -webkit-box-shadow 0.45s, border-color 0.45s ease-in-out;
+  -moz-transition: -moz-box-shadow 0.45s, border-color 0.45s ease-in-out;
+  transition: box-shadow 0.45s, border-color 0.45s ease-in-out; }
+  input[type="text"]:focus,
+  textarea:focus {
+    -webkit-box-shadow: 0 0 5px #999999;
+    -moz-box-shadow: 0 0 5px #999999;
+    box-shadow: 0 0 5px #999999;
+    border-color: #999999; }
+  input[type="text"]:focus,
+  textarea:focus {
+    background: #fafafa;
+    border-color: #999999;
+    outline: none; }
+  input[type="text"][disabled],
+  textarea[disabled] {
+    background-color: #dddddd; }
+
+/**end foundation rules**/
+
+
+
+body {
+	background-color: $light_grey;	
+}
+
+/**responsive images**/
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+.divider_img {
+	img {
+		margin: 0px auto;
+		display: block;
+	}
+}
+/**end responsive images**/
+
+a {
+   outline: 0; /**remove dotted lines**/
+}
+
+/**font selectors**/
+.rob_light {
+	font-family: 'robotolight';
+}
+/**end font selectors**/
+
+/**removeable styles**/
+
+/**end removeable styles**/
+
+.main {
+	width: 1079px;
+	background-color: white;
+	padding-top: 0px;
+
+	article {
+		width: 100%;
+
+		section {
+			min-height: 170px;
+		}
+	}
+
+	section, footer {
+		padding: 20px 10%;
+		/*background: white url(../../img/drop_shadow-divider.jpg) bottom center no-repeat;*/
+		margin-bottom: 0px;
+
+		h2 {
+			line-height: 34px;
+			font-size: 22px;
+			color: #465866;
+			margin-bottom: 30px;
+		}
+	}
+
+	p {
+		color: $dark_blue;
+		line-height: 43px;
+		font-size: 20px;
+		margin-bottom: 40px;
+		display: block;
+
+		.q_num {
+			font-family: 'bebas_neueregular';
+			display: block;
+			color: white;
+			font-size: 30px;
+			float: left;
+			margin-right: 10px;
+			text-align: center;
+			
+			height: 42px;
+			width: 42px;
+			-moz-border-radius: 21px;
+			-webkit-border-radius: 21px;
+			border-radius: 21px;
+			background-color: $rich_blue;
+
+			/*width: 5%;
+			height: 0;
+			padding-bottom: 5%;
+			-moz-border-radius: 50%;
+			-webkit-border-radius: 50%;
+			border-radius: 50%;
+			background-color: $rich_blue;*/
+		}
+	}
+
+	.divider_dots {
+		width: 100%;
+		margin-bottom: 80px;
+		margin-top: 30px;
+
+		&.last {
+			margin-bottom: 0px;
+		}
+
+		img {
+			margin: 0px auto;
+			display: block;
+		}
+	}
+
+	.divider_strip {
+		margin-top: 40px;
+	}
+
+	/*.divider_dots {
+		margin: 30px auto;
+		width: auto;
+		list-style: none;
+
+		li {
+			width: 15px;
+			height: 0;
+			padding-bottom: 15px;
+			-moz-border-radius: 50%;
+			-webkit-border-radius: 50%;
+			border-radius: 50%;
+			background-color: $aqua_marine;
+			margin-right: 15px;
+			float: left;
+			position: absolute;
+			padding: 0px;
+			left: 50%;
+			margin-left: -45px;
+			margin-top: 60px;		
+		}
+	}*/
+
+	footer {
+		p {
+			font-family: 'robotolight';
+			font-size: 18px;
+			line-height: 26px;
+		}
+	}
+
+	.large-8 {
+		width: 70%; 
+		float: left;
+		margin-right: 5%;
+	}
+
+	.large-4 {
+		width: 25%;
+		float: right;
+		
+		.button {
+			width: auto;
+			background-color: $orange;
+			-moz-border-radius: 3px;
+			-webkit-border-radius: 3px;
+			border-radius: 10px;
+			font-family: 'bebas_neueregular';
+			font-size: 55px;
+			display: block;
+			margin-top: 20%; 
+		}
+	}
+
+	.left {
+		float: left;
+	}
+
+	input, textarea {
+		border-radius: 3px;
+		font-size: 16px;
+		font-family: 'robotolight';
+
+		&#numWatches {
+			width: 50px;
+			float: left;
+			margin-left: 20px;
+			margin-top: 23px;
+		}
+
+		&#numBrands {
+			width: 300px;
+			height: 80px;
+			margin-left: 45px;
+		}
+	}
+
+}
+
+
+/***form styles***/
+
+.main {
+
+	form {
+		font-family: 'robotolight';
+		font-size: 18px;
+		line-height: 26px;
+		color: #465866;
+
+		label {
+			margin-bottom: 10px;
+			display: block;
+		}
+
+		.checkbox {
+			input {
+
+			}
+		}
+
+		legend {
+			display: none;
+		}
+
+		.large-4 {
+			width: 30.333%;
+
+			padding-left: 3%;
+
+			input {
+				margin-right: 10%;
+			}
+
+			&.middle {
+				padding-left: 1.5%;
+				padding-right: 1.5%;
+			}
+
+			&.right {
+				padding-left: 0%;
+				padding-right: 3%;
+			}
+		}
+	}
+	
+}
+
+/***end form styles***/
+
+@media (max-width: 500px) {
+	
+	.main {
+
+		input, textarea {
+			&#numBrands {
+				width: 100%;
+			}
+		}
+
+		.large-4 .button { font-size: 45px; }
+
+		.slider_circles {
+			height: 3px;
+
+			li {
+				width: 5%;
+				height: 0;
+				padding-bottom: 5%;
+				-moz-border-radius: 50%;
+				-webkit-border-radius: 50%;
+				border-radius: 50%;
+				background-color: white;
+				box-shadow: 0px 0px 0pt 2.5pt #868b95;
+				float: left;
+				margin-right: 5.55%;
+				margin-top: -2%;
+			}
+		}
+	}
+}
+
+@media (max-width: 870px) { 
+
+	.main {
+		width: 100%;
+
+		form {
+			font-size: 16px;
+
+			label {
+				margin-bottom: 10px;
+				display: block;
+			}
+
+			.checkbox {
+				input {
+					
+				}
+			}
+
+			.large-4 {
+				width: 100%;
+
+				padding-left: 0%;
+
+				input {
+					margin-right: 10%;
+				}
+
+				&.middle {
+					padding-left: 0%;
+					padding-right: 0%;
+				}
+
+				&.right {
+					padding-left: 0%;
+					padding-right: 0%;
+				}
+			}
+		}
+
+		.last {
+			margin-bottom: 0px;
+		}
+
+		.left {
+			float: none;
+
+			input {
+				float: none;
+			}
+		}
+
+		input, textarea {
+
+			&#numWatches {
+				margin-left: auto;
+				margin-right: auto;
+				float: none;
+			}
+
+			&#numBrands {
+				margin-right: auto;
+				margin-left: auto;
+			}
+		}
+
+		.large-8, .large-4 {
+			width: 100%;
+			float: none;
+
+			.button {
+				width: 50%;
+				margin: auto;
+				float: none;
+				display: block;
+			}
+		}
+
+		p {
+			text-align: center;
+			line-height: 25px;
+			font-size: 16px;
+
+			.q_num {
+				float: none;
+				margin: 0px auto 20px;
+				line-height: 44px;
+			}
+		}
+
+		.slider_circles.radio .radio_btn {
+			width: 50%;
+
+			a {
+				width: 20%;
+				height: 0px;
+				padding-bottom: 20%;
+				float: none;
+				display: block; 
+				margin: 0px auto;
+			}
+
+			p {
+				float: none;
+				margin-left: 0px;
+			}
+		}
+
+
+		.agree {
+			li {
+		   		width:32%;
+		   	}
+	   	}
+
+		footer p {
+			font-size: 16px;
+		}
+	}
+
+	.main section h2, .main footer h2 {
+		line-height: 26px;
+		font-size: 16px;
+		color: #465866;
+		margin-bottom: 30px;
+	}
+
+
+
+
+}
+
+
+@media (max-width: 1079px) { 
+
+	.main {
+		width: 100%;
+	}
+
+}
+
+
