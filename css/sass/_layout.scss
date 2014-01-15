@@ -282,6 +282,23 @@ a {
 
 .main {
 
+	/**reveal**/
+	.reveal_option {
+		display: none;
+		width: 100%;
+		float: left;
+
+		p {
+			width: 100%;
+			display: block;
+		}
+
+		input {
+			width: 30%;
+		}
+	}
+	/**end reveal**/
+
 	form {
 		font-family: 'robotolight';
 		font-size: 18px;
@@ -364,6 +381,12 @@ a {
 
 	.main {
 		width: 100%;
+
+		.reveal_option {
+			input {
+				width: 30%;
+			}
+		}
 
 		form {
 			font-size: 16px;

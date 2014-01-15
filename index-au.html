@@ -263,26 +263,15 @@
                             <img src="img/drop_shadow-divider.jpg" alt="Question diver with drop shadow">
                         </div>
 
-<!--                         <div class="divider_dots">
-                            <img src="img/divider.png" alt="dividing dots between sections">
-                        </div> -->
 
                     </section>
 
-
-<!--                     <div class="divider_img">
-                        <img src="img/divider_image-readingaskmen.jpg" alt="Question diver with drop shadow">
-                    </div> -->
 
 
                     <section>
 
                         <p class="rob_light"><span class="q_num">3</span> If magazines or online, which magazines/websites?</p>
 
-<!--                         <div class="slider_circles radio slt_single">
-                            <div class="radio_btn"><a href="#_" data-num="1" class="full"><span></span></a><p>Yes</p></div>
-                            <div class="radio_btn"><a href="#_" data-num="2"></a><p>No</p></div>
-                        </div> -->
 
                          <div class="slider_circles radio">
                             <div class="radio_btn"><a href="#_" data-num="1"></a><p>Askmen</p></div>
@@ -292,9 +281,12 @@
                             <div class="radio_btn"><a href="#_" data-num="5"></a><p>Esquire</p></div>
                             <div class="radio_btn"><a href="#_" data-num="6"></a><p>Mr Porter</p></div>
                             <div class="radio_btn"><a href="#_" data-num="7"></a><p>YOOX</p></div>
-                            <div class="radio_btn"><a href="#_" data-num="8"></a><p>Other (please specify)</p></div>
+                            <div class="radio_btn"><a href="#_" data-num="8" class="reveal_anchor"></a><p>Other (please specify)</p></div>
                         </div>
 
+                        <div class="reveal_option">
+                            <input type="text" value="" />
+                        </div>
 
                         <div class="divider_strip">
                             <img src="img/drop_shadow-divider.jpg" alt="Question diver with drop shadow">
@@ -362,8 +354,17 @@
                         <p class="rob_light"><span class="q_num">6</span> Have you ever read the Watch Snob column ?</p>
 
                         <div class="slider_circles radio slt_single">
-                            <div class="radio_btn"><a href="#_" data-num="1"></a><p>Yes</p></div>
-                            <div class="radio_btn"><a href="#_" data-num="2"></a><p>No</p></div>
+                            <div class="radio_btn"><a href="#_" data-num="1" class="hide_anchor"></a><p>Yes</p></div>
+                            <div class="radio_btn"><a href="#_" data-num="2" class="reveal_anchor"></a><p>No</p></div>
+                        </div>
+
+                        <div class="reveal_option">
+                            <p class="rob_light">If no, are you aware of the Watch Snob column ?</p>
+
+                            <div class="slider_circles radio slt_single">
+                                <div class="radio_btn"><a href="#_" data-num="1"></a><p>Yes</p></div>
+                                <div class="radio_btn"><a href="#_" data-num="2"></a><p>No</p></div>
+                            </div>
                         </div>
 
 
@@ -443,7 +444,11 @@
                             <div class="radio_btn"><a href="#_" data-num="3"></a><p>Sports watch</p></div>
                             <div class="radio_btn"><a href="#_" data-num="4"></a><p>Multifunction watch</p></div>
                             <div class="radio_btn"><a href="#_" data-num="5"></a><p>Jewellery watch</p></div>
-                            <div class="radio_btn"><a href="#_" data-num="6"></a><p>other</p></div>
+                            <div class="radio_btn"><a href="#_" data-num="6" class="reveal_anchor"></a><p>other (Please specify)</p></div>
+                        </div>
+
+                        <div class="reveal_option">
+                            <input type="text" value="" />
                         </div>
 
                         <div class="divider_strip">
@@ -468,7 +473,12 @@
                             <div class="radio_btn"><a href="#_" data-num="9"></a><p>Power reserve</p></div>
                             <div class="radio_btn"><a href="#_" data-num="10"></a><p>Moon phase</p></div>
                             <div class="radio_btn"><a href="#_" data-num="11"></a><p>Minute repeater</p></div>
-                            <div class="radio_btn"><a href="#_" data-num="12"></a><p>Other</p></div>
+                            <div class="radio_btn"><a href="#_" data-num="12" class="reveal_anchor"></a><p>Other (Please specify)</p></div>               
+                        </div>
+
+
+                        <div class="reveal_option">
+                            <input type="text" value="" />
                         </div>
 
                         <div class="divider_strip">
@@ -494,20 +504,6 @@
 
                     </section>
 
-
-<!--                     <section>
-
-                        <p class="rob_light left"><span class="q_num">13</span> Which watch brands do you own?</p>
-
-                        
-                        <input type="text" id="numWatches" value="" />
-
-
-                        <div class="divider_strip">
-                            <img src="img/drop_shadow-divider.jpg" alt="Question diver with drop shadow">
-                        </div>
-
-                    </section> -->
 
                     <section>
 
@@ -618,11 +614,6 @@
             </div> <!-- #main -->
         </div> <!-- #main-container -->
 
-        <!--<div class="footer-container">
-            <footer class="wrapper">
-                <h3>footer</h3>
-            </footer>
-        </div> -->
 
          <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
          <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
@@ -649,6 +640,15 @@
                         }
                     });
 
+                });
+
+
+                $('.reveal_anchor').on('click', function(){
+                    $(this).parents('section').find('.reveal_option').fadeIn();
+                });
+
+                $('.hide_anchor').on('click', function(){
+                    $(this).parents('section').parent().find.fadeOut();
                 });
 
             });    
