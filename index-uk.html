@@ -659,15 +659,28 @@
 
         function slideFunc(uiVal, curNum, ele){
 
-
-            //console.log( uiVal );
-            //console.log("current number = " + curNum);
-
+            //code for incremental increase in dots
             if(uiVal > curNum) {
                 ele.find("[data-num='" + (uiVal) + "']").addClass('full').html('<span></span>');
             } else if(uiVal < curNum) {
                 ele.find("[data-num='" + (uiVal + 1) + "']").removeClass('full').html('');
             }
+
+            //code for step change in dots
+            ele.find('li').each(function(i){
+
+                if(i == uiVal) {
+                    return false;
+
+                } else if(uiVal < curNum) {
+                    for (var j = (uiVal + 1) ; j<=10 ; j++) {
+                        ele.parent().find("[data-num='" + j + "']").removeClass('full').html('');
+                     }
+                } else {
+                    ele.parent().find("[data-num='" + (i+1) + "']").addClass('full').html('<span></span>');
+                }
+
+            });
 
 
         }
@@ -688,43 +701,11 @@
               step: 1,
               slide: function( event, ui ) {
 
-                // var circ = $( "#circles0" );
+                var circ = $( "#circles0" );
 
-                // slideFunc(ui.value, currentNum0, circ);
+                slideFunc(ui.value, currentNum0, circ);
 
-                // currentNum0 = ui.value;
-
-
-                $( "#circles0 > li" ).each(function(i){
-
-                    
-
-                    if(i == ui.value) {
-                        return false;
-                    } else {
-                        $(this).parent().find("[data-num='" + (i+1) + "']").addClass('full').html('<span></span>');
-                    }
-
-                    console.log(i);
-                    console.log(ui.value);
-
-                });
-
-              },
-              change: function( event, ui ) {
-
-                // $( "#circles0 > li" ).each(function(i){
-
-                //     $(this).parent().find("[data-num='" + i + "']").addClass('full').html('<span></span>');
-
-                //     if(i == ui.value) {
-                //         return false;
-                //     }
-
-                //     console.log(i);
-                //     console.log(ui.value);
-
-                // });
+                currentNum0 = ui.value;
 
               }
             });
