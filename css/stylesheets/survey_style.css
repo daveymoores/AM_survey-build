@@ -398,7 +398,7 @@ a {
   }
   /* line 386, ../sass/_layout.scss */
   .main .reveal_option input {
-    width: 30%;
+    width: 100%;
   }
   /* line 391, ../sass/_layout.scss */
   .main form {
