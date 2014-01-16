@@ -1,7 +1,7 @@
 3.2.3 (Media Mark)
-86d346cff41419155451c326592d0c2ca386e8bd
+37924a2e0babccaf7c191d79f2b538730b2519e1
 o:Sass::Tree::RootNode
-:@template"¯$light_grey: #efefef;
+:@template"­$light_grey: #efefef;
 $dark_blue: #465866;
 $rich_blue: #0A4772;
 $rich_green: #85C833;
@@ -364,17 +364,17 @@ a {
 			height: 3px;
 
 			li {
-				width: 5%;
+				width: 7%;
 				height: 0;
-				padding-bottom: 5%;
+				padding-bottom: 7%;
 				-moz-border-radius: 50%;
 				-webkit-border-radius: 50%;
 				border-radius: 50%;
 				background-color: white;
 				box-shadow: 0px 0px 0pt 2.5pt #868b95;
 				float: left;
-				margin-right: 5.55%;
-				margin-top: -2%;
+				margin-right: 16%;
+				margin-top: -3%;
 			}
 		}
 	}
@@ -766,11 +766,10 @@ width;ib;!["-&#numBrands0, &#numBrands1, &#numBrands2;"o;#;$[o;%;$[o;&
 input;i`;.0;)o;*;+{ ;,0;(@8;i`o;%;$[o;&
 ;$[o;-	;(@8;["textarea;i`;.0;)o;*;+{ ;,0;(@8;i`;(@8;i`;i`o;;T;@;i ;	[o;;@;i ;	[ ;;;o;;@;;;"	45px;["font-size;if;![".large-4 .button;"o;#;$[o;%;$[o;&
 ;$[o;';(" ;["large-4;if;)o;*;+{ ;,0;(@W;ifo;&
-;$[o;';(@W;["button;if;)o;*;+{ ;,0;(@W;if;(@W;if;ifo;;T;@;i ;	[o;;@;i ;	[ ;;;o;;@;;;"3px;["height;iio;;T;@;i ;	[o;;@;i ;	[ ;;;o;;@;;;"5%;["
-width;ilo;;@;i ;	[ ;;;o;;@;;;"0;["height;imo;;@;i ;	[ ;;;o;;@;;;"5%;["padding-bottom;ino;;@;i ;	[ ;;;o;;@;;;"50%;["-moz-border-radius;ioo;;@;i ;	[ ;;;o;;@;;;"50%;["-webkit-border-radius;ipo;;@;i ;	[ ;;;o;;@;;;"50%;["border-radius;iqo;;@;i ;	[ ;;;o;;@;;;"
+;$[o;';(@W;["button;if;)o;*;+{ ;,0;(@W;if;(@W;if;ifo;;T;@;i ;	[o;;@;i ;	[ ;;;o;;@;;;"3px;["height;iio;;T;@;i ;	[o;;@;i ;	[ ;;;o;;@;;;"7%;["
+width;ilo;;@;i ;	[ ;;;o;;@;;;"0;["height;imo;;@;i ;	[ ;;;o;;@;;;"7%;["padding-bottom;ino;;@;i ;	[ ;;;o;;@;;;"50%;["-moz-border-radius;ioo;;@;i ;	[ ;;;o;;@;;;"50%;["-webkit-border-radius;ipo;;@;i ;	[ ;;;o;;@;;;"50%;["border-radius;iqo;;@;i ;	[ ;;;o;;@;;;"
 white;["background-color;iro;;@;i ;	[ ;;;o;;@;;;"0px 0px 0pt 2.5pt #868b95;["box-shadow;iso;;@;i ;	[ ;;;o;;@;;;"	left;["
-float;ito;;@;i ;	[ ;;;o;;@;;;"
-5.55%;["margin-right;iuo;;@;i ;	[ ;;;o;5;6["%;@;7"-2%;iù;8[ ;iv;["margin-top;iv;!["li;"o;#;$[o;%;$[o;&
+float;ito;;@;i ;	[ ;;;o;;@;;;"16%;["margin-right;iuo;;@;i ;	[ ;;;o;5;6["%;@;7"-3%;iø;8[ ;iv;["margin-top;iv;!["li;"o;#;$[o;%;$[o;&
 ;$[o;-	;(" ;["li;ik;.0;)o;*;+{ ;,0;(@»;ik;(@»;ik;ik;![".slider_circles;"o;#;$[o;%;$[o;&
 ;$[o;';(" ;["slider_circles;ih;)o;*;+{ ;,0;(@É;ih;(@É;ih;ih;!["
 .main;"o;#;$[o;%;$[o;&
