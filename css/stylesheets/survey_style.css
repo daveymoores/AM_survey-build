@@ -334,29 +334,48 @@ a {
   color: #465866;
 }
 /* line 308, ../sass/_layout.scss */
+.main form a {
+  color: #f40;
+  text-decoration: none;
+}
+/* line 312, ../sass/_layout.scss */
+.main form a:hover {
+  text-decoration: underline;
+}
+/* line 317, ../sass/_layout.scss */
 .main form label {
   margin-bottom: 10px;
   display: block;
+  font-family: 'robotoregular';
 }
-/* line 319, ../sass/_layout.scss */
+/* line 324, ../sass/_layout.scss */
+.main form .checkbox input {
+  margin-right: 20px;
+}
+/* line 329, ../sass/_layout.scss */
+.main form .help-block {
+  margin-bottom: 30px;
+  display: block;
+}
+/* line 334, ../sass/_layout.scss */
 .main form legend {
   display: none;
 }
-/* line 323, ../sass/_layout.scss */
+/* line 338, ../sass/_layout.scss */
 .main form .large-4 {
   width: 30.333%;
   padding-left: 3%;
 }
-/* line 328, ../sass/_layout.scss */
+/* line 343, ../sass/_layout.scss */
 .main form .large-4 input {
   margin-right: 10%;
 }
-/* line 332, ../sass/_layout.scss */
+/* line 347, ../sass/_layout.scss */
 .main form .large-4.middle {
   padding-left: 1.5%;
   padding-right: 1.5%;
 }
-/* line 337, ../sass/_layout.scss */
+/* line 352, ../sass/_layout.scss */
 .main form .large-4.right {
   padding-left: 0%;
   padding-right: 3%;
@@ -364,19 +383,19 @@ a {
 
 /***end form styles***/
 @media (max-width: 500px) {
-  /* line 353, ../sass/_layout.scss */
+  /* line 368, ../sass/_layout.scss */
   .main input#numBrands0, .main input#numBrands1, .main input#numBrands2, .main textarea#numBrands0, .main textarea#numBrands1, .main textarea#numBrands2 {
     width: 100%;
   }
-  /* line 358, ../sass/_layout.scss */
+  /* line 373, ../sass/_layout.scss */
   .main .large-4 .button {
     font-size: 45px;
   }
-  /* line 360, ../sass/_layout.scss */
+  /* line 375, ../sass/_layout.scss */
   .main .slider_circles {
     height: 3px;
   }
-  /* line 363, ../sass/_layout.scss */
+  /* line 378, ../sass/_layout.scss */
   .main .slider_circles li {
     width: 7%;
     height: 0;
@@ -392,94 +411,94 @@ a {
   }
 }
 @media (max-width: 870px) {
-  /* line 382, ../sass/_layout.scss */
+  /* line 397, ../sass/_layout.scss */
   .main {
     width: 100%;
   }
-  /* line 386, ../sass/_layout.scss */
+  /* line 401, ../sass/_layout.scss */
   .main .reveal_option input {
     width: 100%;
   }
-  /* line 391, ../sass/_layout.scss */
+  /* line 406, ../sass/_layout.scss */
   .main form {
     font-size: 16px;
   }
-  /* line 394, ../sass/_layout.scss */
+  /* line 409, ../sass/_layout.scss */
   .main form label {
     margin-bottom: 10px;
     display: block;
   }
-  /* line 405, ../sass/_layout.scss */
+  /* line 420, ../sass/_layout.scss */
   .main form .large-4 {
     width: 100%;
     padding-left: 0%;
   }
-  /* line 410, ../sass/_layout.scss */
+  /* line 425, ../sass/_layout.scss */
   .main form .large-4 input {
     margin-right: 10%;
   }
-  /* line 414, ../sass/_layout.scss */
+  /* line 429, ../sass/_layout.scss */
   .main form .large-4.middle {
     padding-left: 0%;
     padding-right: 0%;
   }
-  /* line 419, ../sass/_layout.scss */
+  /* line 434, ../sass/_layout.scss */
   .main form .large-4.right {
     padding-left: 0%;
     padding-right: 0%;
   }
-  /* line 426, ../sass/_layout.scss */
+  /* line 441, ../sass/_layout.scss */
   .main .last {
     margin-bottom: 0px;
   }
-  /* line 430, ../sass/_layout.scss */
+  /* line 445, ../sass/_layout.scss */
   .main .left {
     float: none;
   }
-  /* line 433, ../sass/_layout.scss */
+  /* line 448, ../sass/_layout.scss */
   .main .left input {
     float: none;
   }
-  /* line 440, ../sass/_layout.scss */
+  /* line 455, ../sass/_layout.scss */
   .main input#numWatches, .main textarea#numWatches {
     margin-left: auto;
     margin-right: auto;
     float: none;
   }
-  /* line 446, ../sass/_layout.scss */
+  /* line 461, ../sass/_layout.scss */
   .main input#numBrands0, .main input#numBrands1, .main input#numBrands2, .main textarea#numBrands0, .main textarea#numBrands1, .main textarea#numBrands2 {
     margin-right: auto;
     margin-left: auto;
   }
-  /* line 452, ../sass/_layout.scss */
+  /* line 467, ../sass/_layout.scss */
   .main .large-8, .main .large-4 {
     width: 100%;
     float: none;
   }
-  /* line 456, ../sass/_layout.scss */
+  /* line 471, ../sass/_layout.scss */
   .main .large-8 .button, .main .large-4 .button {
     width: 50%;
     margin: auto;
     float: none;
     display: block;
   }
-  /* line 464, ../sass/_layout.scss */
+  /* line 479, ../sass/_layout.scss */
   .main p {
     text-align: center;
     line-height: 25px;
     font-size: 16px;
   }
-  /* line 469, ../sass/_layout.scss */
+  /* line 484, ../sass/_layout.scss */
   .main p .q_num {
     float: none;
     margin: 0px auto 20px;
     line-height: 44px;
   }
-  /* line 476, ../sass/_layout.scss */
+  /* line 491, ../sass/_layout.scss */
   .main .slider_circles.radio .radio_btn {
     width: 50%;
   }
-  /* line 479, ../sass/_layout.scss */
+  /* line 494, ../sass/_layout.scss */
   .main .slider_circles.radio .radio_btn a {
     width: 20%;
     height: 0px;
@@ -488,21 +507,21 @@ a {
     display: block;
     margin: 0px auto;
   }
-  /* line 488, ../sass/_layout.scss */
+  /* line 503, ../sass/_layout.scss */
   .main .slider_circles.radio .radio_btn p {
     float: none;
     margin-left: 0px;
   }
-  /* line 496, ../sass/_layout.scss */
+  /* line 511, ../sass/_layout.scss */
   .main .agree li {
     width: 32%;
   }
-  /* line 501, ../sass/_layout.scss */
+  /* line 516, ../sass/_layout.scss */
   .main footer p {
     font-size: 16px;
   }
 
-  /* line 506, ../sass/_layout.scss */
+  /* line 521, ../sass/_layout.scss */
   .main section h2, .main footer h2 {
     line-height: 26px;
     font-size: 16px;
@@ -511,7 +530,7 @@ a {
   }
 }
 @media (max-width: 1079px) {
-  /* line 521, ../sass/_layout.scss */
+  /* line 536, ../sass/_layout.scss */
   .main {
     width: 100%;
   }

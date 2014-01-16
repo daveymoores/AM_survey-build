@@ -305,15 +305,30 @@ a {
 		line-height: 26px;
 		color: #465866;
 
+		a {
+			color: #f40;
+			text-decoration: none;
+
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+
 		label {
 			margin-bottom: 10px;
 			display: block;
+			font-family: 'robotoregular';
 		}
 
 		.checkbox {
 			input {
-
+				margin-right: 20px;
 			}
+		}
+
+		.help-block {
+			margin-bottom: 30px;
+			display: block;
 		}
 
 		legend {
