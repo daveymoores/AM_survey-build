@@ -44,7 +44,7 @@
 
                         <p class="rob_light"><span class="q_num">1</span> I’m looking to purchase a new watch in the next two years</p>
                         <div id="slider_wrapper0">
-                            <ul class="slider_circles" id="circles0" data-question="1">
+                            <ul class="slider_circles radio slt_single" id="circles0" data-question="1">
                                 <li data-num="1" class="full"><span></span></li>
                                 <li data-num="2"></li>
                                 <li data-num="3"></li>
@@ -52,9 +52,9 @@
                                 <li data-num="5" class="last"></li>
                             </ul>
 
-                            <div class="slider_container">
+                            <!-- <div class="slider_container">
                                 <div id="slider0" class="drag"></div>
-                            </div>
+                            </div> -->
 
                             <ul class="agree">
                                 <li>Agree</li>
@@ -72,7 +72,7 @@
 
                         <p class="rob_light"><span class="q_num">2</span> The watch a man wears can contribute to his image</p>
                         <div id="slider_wrapper1">
-                            <ul class="slider_circles" id="circles1" data-question="2">
+                            <ul class="slider_circles radio slt_single" id="circles1" data-question="2">
                                 <li data-num="1" class="full"><span></span></li>
                                 <li data-num="2"></li>
                                 <li data-num="3"></li>
@@ -80,9 +80,9 @@
                                 <li data-num="5" class="last"></li>
                             </ul>
 
-                            <div class="slider_container">
+                            <!-- <div class="slider_container">
                                 <div id="slider1" class="drag"></div>
-                            </div>
+                            </div> -->
 
                             <ul class="agree">
                                 <li>Agree</li>
@@ -101,7 +101,7 @@
 
                         <p class="rob_light"><span class="q_num">3</span> A watch is the most important accessory a man can buy</p>
                         <div id="slider_wrapper2">
-                            <ul class="slider_circles" id="circles2" data-question="3">
+                            <ul class="slider_circles radio slt_single" id="circles2" data-question="3">
                                 <li data-num="1" class="full"><span></span></li>
                                 <li data-num="2"></li>
                                 <li data-num="3"></li>
@@ -109,9 +109,9 @@
                                 <li data-num="5" class="last"></li>
                             </ul>
 
-                            <div class="slider_container">
+<!--                             <div class="slider_container">
                                 <div id="slider2" class="drag"></div>
-                            </div>
+                            </div> -->
 
                             <ul class="agree">
                                 <li>Agree</li>
@@ -128,7 +128,7 @@
 
                         <p class="rob_light"><span class="q_num">4</span> I see a watch as an important gift to give/receive on special occasions</p>
                         <div id="slider_wrapper3">
-                            <ul class="slider_circles" id="circles3" data-question="4">
+                            <ul class="slider_circles radio slt_single" id="circles3" data-question="4">
                                 <li data-num="1" class="full"><span></span></li>
                                 <li data-num="2"></li>
                                 <li data-num="3"></li>
@@ -136,9 +136,9 @@
                                 <li data-num="5" class="last"></li>
                             </ul>
 
-                            <div class="slider_container">
+<!--                             <div class="slider_container">
                                 <div id="slider3" class="drag"></div>
-                            </div>
+                            </div> -->
 
                             <ul class="agree">
                                 <li>Agree</li>
@@ -154,7 +154,7 @@
 
                         <p class="rob_light"><span class="q_num">5</span> For my next watch purchase, I will do my research online</p>
                         <div id="slider_wrapper4">
-                            <ul class="slider_circles" id="circles4" data-question="5">
+                            <ul class="slider_circles radio slt_single" id="circles4" data-question="5">
                                 <li data-num="1" class="full"><span></span></li>
                                 <li data-num="2"></li>
                                 <li data-num="3"></li>
@@ -162,9 +162,9 @@
                                 <li data-num="5" class="last"></li>
                             </ul>
 
-                            <div class="slider_container">
+<!--                             <div class="slider_container">
                                 <div id="slider4" class="drag"></div>
-                            </div>
+                            </div> -->
 
                             <ul class="agree">
                                 <li>Agree</li>
@@ -180,7 +180,7 @@
 
                         <p class="rob_light"><span class="q_num">6</span> I would consider buying a watch online</p>
                         <div id="slider_wrapper5">
-                            <ul class="slider_circles" id="circles5" data-question="6">
+                            <ul class="slider_circles radio slt_single" id="circles5" data-question="6">
                                 <li data-num="1" class="full"><span></span></li>
                                 <li data-num="2"></li>
                                 <li data-num="3"></li>
@@ -188,9 +188,9 @@
                                 <li data-num="5" class="last"></li>
                             </ul>
 
-                            <div class="slider_container">
+<!--                             <div class="slider_container">
                                 <div id="slider5" class="drag"></div>
-                            </div>
+                            </div> -->
 
                             <ul class="agree">
                                 <li>Agree</li>
@@ -627,6 +627,23 @@
 
                 });
 
+                $('.radio').each(function(){
+
+                    var $this = $(this);
+
+                    $this.on('click', 'li', function(){
+                        if($(this).hasClass('full') !== true) {
+                            if($this.hasClass('slt_single')) {
+                                $this.find('.full').removeClass('full').find('span').remove();
+                            }
+                            $(this).addClass('full').prepend('<span></span>');
+                        } else {
+                            console.log('Already selected');
+                        }
+                    });
+
+                });
+
                 $('.reveal_anchor').on('click', function(){
                     $(this).parents('section').find('.reveal_option').fadeIn();
                 });
@@ -652,7 +669,7 @@
 
         </script>
 
-        <script>
+        <!--script>
 
         function slideFunc(uiVal, curNum, ele){
 
@@ -794,7 +811,7 @@
             });
 
           });
-          </script>
+          </script-->
 
     </body>
 </html>

@@ -80,6 +80,7 @@ $dark_grey: #868b95;
 		float: left;
 		margin-right: 20%;
 		margin-top: -2%;
+		cursor: pointer;
 
 		&.last {
 			margin-right: 0px;
@@ -148,4 +149,9 @@ $dark_grey: #868b95;
 			}
 	    }
 	}
+}
+
+
+ul.slider_circles { 
+	background-color: $dark_grey!important;
 }

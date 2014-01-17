@@ -617,13 +617,14 @@ a {
   float: left;
   margin-right: 20%;
   margin-top: -2%;
+  cursor: pointer;
 }
-/* line 84, ../sass/_sliders.scss */
+/* line 85, ../sass/_sliders.scss */
 .slider_circles li.last {
   margin-right: 0px;
   float: right;
 }
-/* line 90, ../sass/_sliders.scss */
+/* line 91, ../sass/_sliders.scss */
 .slider_circles li.full span {
   display: block;
   width: 81%;
@@ -636,17 +637,17 @@ a {
   margin: auto;
   margin-top: 9%;
 }
-/* line 106, ../sass/_sliders.scss */
+/* line 107, ../sass/_sliders.scss */
 .slider_circles.radio {
   background-color: transparent;
 }
-/* line 109, ../sass/_sliders.scss */
+/* line 110, ../sass/_sliders.scss */
 .slider_circles.radio .radio_btn {
   width: 33.333%;
   margin-bottom: 6%;
   float: left;
 }
-/* line 114, ../sass/_sliders.scss */
+/* line 115, ../sass/_sliders.scss */
 .slider_circles.radio .radio_btn p {
   float: left;
   line-height: 14px;
@@ -654,7 +655,7 @@ a {
   font-size: 14px;
   font-family: 'robotolight';
 }
-/* line 122, ../sass/_sliders.scss */
+/* line 123, ../sass/_sliders.scss */
 .slider_circles.radio .radio_btn a {
   width: 14%;
   height: 0;
@@ -666,7 +667,7 @@ a {
   border: 4px solid #868b95;
   float: left;
 }
-/* line 135, ../sass/_sliders.scss */
+/* line 136, ../sass/_sliders.scss */
 .slider_circles.radio .radio_btn a.full span {
   background-color: #85c833;
   display: block;
@@ -678,4 +679,9 @@ a {
   border-radius: 50%;
   margin: auto;
   margin-top: 9%;
+}
+
+/* line 155, ../sass/_sliders.scss */
+ul.slider_circles {
+  background-color: #868b95 !important;
 }
