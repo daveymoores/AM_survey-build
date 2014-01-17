@@ -497,8 +497,9 @@ a {
   /* line 491, ../sass/_layout.scss */
   .main .slider_circles.radio .radio_btn {
     width: 50%;
+    min-height: 120px;
   }
-  /* line 494, ../sass/_layout.scss */
+  /* line 495, ../sass/_layout.scss */
   .main .slider_circles.radio .radio_btn a {
     width: 20%;
     height: 0px;
@@ -507,21 +508,21 @@ a {
     display: block;
     margin: 0px auto;
   }
-  /* line 503, ../sass/_layout.scss */
+  /* line 504, ../sass/_layout.scss */
   .main .slider_circles.radio .radio_btn p {
     float: none;
     margin-left: 0px;
   }
-  /* line 511, ../sass/_layout.scss */
+  /* line 512, ../sass/_layout.scss */
   .main .agree li {
     width: 32%;
   }
-  /* line 516, ../sass/_layout.scss */
+  /* line 517, ../sass/_layout.scss */
   .main footer p {
     font-size: 16px;
   }
 
-  /* line 521, ../sass/_layout.scss */
+  /* line 522, ../sass/_layout.scss */
   .main section h2, .main footer h2 {
     line-height: 26px;
     font-size: 16px;
@@ -530,7 +531,7 @@ a {
   }
 }
 @media (max-width: 1079px) {
-  /* line 536, ../sass/_layout.scss */
+  /* line 537, ../sass/_layout.scss */
   .main {
     width: 100%;
   }
