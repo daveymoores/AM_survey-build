@@ -664,42 +664,11 @@
             
             
             $(function() {
-
-                var numbers = [];
-
-                var qna = { q_num: [] };
-
                 $('#submit').on('click', function(){
-
-                    $('.slider_circles').each(function(i){
-
-                        var $this = $(this);
-
-                        $this.find('.full').each(function(i){
-
-                            if($(this).hasClass('text')) {
-
-                                numbers[i] = $(this).val();
-
-                            } else {
-
-                                numbers[i] = $(this).attr('data-num');
-
-                            }
-
-                        });
-
-                        qna.q_num.push(numbers);
-                        numbers = [];
-
-                    });
-
-                    console.log(qna);
-
                     $.ajax({
                         url : "",
                         type: "POST",
-                        data : qna,
+                        data : $(form).serialize(),
                         success: function(data, textStatus, jqXHR) {
 
                             alert('POST to server successful - all gravy...');
