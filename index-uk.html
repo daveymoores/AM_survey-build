@@ -637,8 +637,6 @@
                     var selectedValue = question.find('.full').attr('data-num');
                     if (question.hasClass("slt_single")) {
                         setRadioButton(question, selectedValue);
-                    } else if(question.hasClass('text')) {
-                        console.log('bleh');
                     } else {
                         setCheckboxes(question);
                     }
