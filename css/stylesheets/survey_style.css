@@ -692,3 +692,14 @@ a {
 ul.slider_circles {
   background-color: #868b95 !important;
 }
+
+/* line 159, ../sass/_sliders.scss */
+.slider_circles.text {
+  height: auto;
+  width: 100%;
+  background-color: white;
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+  margin-top: 0px;
+}

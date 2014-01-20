@@ -267,7 +267,7 @@
                         </div>
 
                         <div class="reveal_option">
-                            <input type="text" value="" id="q_9"/>
+                            <input type="text" value="" id="q_9" class="full text"/>
                         </div>
 
                         <div class="divider_strip">
@@ -341,7 +341,7 @@
                         </div>
 
                         <div class="reveal_option">
-                            <p class="rob_light">If no, are you aware of the Watch Snob column ?</p>
+                            <p class="rob_light"><span class="q_num" style="display:none;">12_b</span> If no, are you aware of the Watch Snob column ?</p>
 
                             <div class="slider_circles radio slt_single" data-question="12_b">
                                 <div class="radio_btn"><a href="#_" data-num="1"></a><p>Yes</p></div>
@@ -431,7 +431,7 @@
                         </div>
 
                         <div class="reveal_option">
-                            <input type="text" value="" id="q_16"/>
+                            <input type="text" value="" id="q_16" class="text"/>
                         </div>
 
                         <div class="divider_strip">
@@ -460,7 +460,7 @@
                         </div>
 
                         <div class="reveal_option">
-                            <input type="text" value="" id="q_17"/>
+                            <input type="text" value="" id="q_17" class="text"/>
                         </div>
 
                         <div class="divider_strip">
@@ -494,7 +494,9 @@
 
                         <p class="rob_light"><span class="q_num">19</span> Which watch brands do you own?</p>
 
-                        <textarea rows="4" cols="50" id="numBrands0" /></textarea>
+                        <div class="slider_circles text">
+                            <textarea rows="4" cols="50" id="numBrands0"  class="full text"/></textarea>
+                        </div>
 
                         <div class="divider_strip">
                             <img src="img/drop_shadow-divider.jpg" alt="Question diver with drop shadow">
@@ -508,7 +510,10 @@
 
                         <p class="rob_light"><span class="q_num">20</span> Which are the most desirable watch brands for you?</p>
 
-                        <textarea rows="4" cols="50" id="numBrands1" /></textarea>
+                        <div class="slider_circles text">
+                            <textarea rows="4" cols="50" id="numBrands1"  class="full text"/></textarea>
+                        </div>
+
 
                         <div class="divider_strip">
                             <img src="img/drop_shadow-divider.jpg" alt="Question diver with drop shadow">
@@ -522,7 +527,9 @@
 
                         <p class="rob_light"><span class="q_num">21</span> Which brand(s) would you consider for your next purchase?</p>
 
-                        <textarea rows="4" cols="50" id="numBrands2" /></textarea>
+                        <div class="slider_circles text">
+                            <textarea rows="4" cols="50" id="numBrands2" class="full text"/></textarea>
+                        </div>
 
                         <div class="divider_strip">
                             <img src="img/drop_shadow-divider.jpg" alt="Question diver with drop shadow">
@@ -607,6 +614,58 @@
         <script src="js/main.js"></script>
 
         <script>
+
+            $(function() {
+
+                var numbers = [];
+
+                var qna = { q_num: [] };
+
+                $('#submit').on('click', function(){
+
+                    $('.slider_circles').each(function(i){
+
+                        var $this = $(this);
+
+                        $this.find('.full').each(function(i){
+
+                            if($(this).hasClass('text')) {
+
+                                numbers[i] = $(this).val();
+
+                            } else {
+
+                                numbers[i] = $(this).attr('data-num');
+
+                            }
+
+                        });
+
+                        qna.q_num.push(numbers);
+                        numbers = [];
+
+                    });
+
+                    console.log(qna);
+
+                    $.ajax({
+                        url : "",
+                        type: "POST",
+                        data : qna,
+                        success: function(data, textStatus, jqXHR) {
+
+                            alert('POST to server successful - all gravy...');
+                        
+                        }, error: function (jqXHR, textStatus, errorThrown) {
+
+                            alert(textStatus);
+                     
+                        }
+                    });
+
+                });
+
+            });
 
             $(function() {
 
