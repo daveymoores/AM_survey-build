@@ -327,56 +327,56 @@ a {
   width: 30%;
 }
 /* line 302, ../sass/_layout.scss */
-.main form {
+.main fieldset {
   font-family: 'robotolight';
   font-size: 18px;
   line-height: 26px;
   color: #465866;
 }
 /* line 308, ../sass/_layout.scss */
-.main form a {
+.main fieldset a {
   color: #f40;
   text-decoration: none;
 }
 /* line 312, ../sass/_layout.scss */
-.main form a:hover {
+.main fieldset a:hover {
   text-decoration: underline;
 }
 /* line 317, ../sass/_layout.scss */
-.main form label {
+.main fieldset label {
   margin-bottom: 10px;
   display: block;
   font-family: 'robotoregular';
 }
 /* line 324, ../sass/_layout.scss */
-.main form .checkbox input {
+.main fieldset .checkbox input {
   margin-right: 20px;
 }
 /* line 329, ../sass/_layout.scss */
-.main form .help-block {
+.main fieldset .help-block {
   margin-bottom: 30px;
   display: block;
 }
 /* line 334, ../sass/_layout.scss */
-.main form legend {
+.main fieldset legend {
   display: none;
 }
 /* line 338, ../sass/_layout.scss */
-.main form .large-4 {
+.main fieldset .large-4 {
   width: 30.333%;
   padding-left: 3%;
 }
 /* line 343, ../sass/_layout.scss */
-.main form .large-4 input {
+.main fieldset .large-4 input {
   margin-right: 10%;
 }
 /* line 347, ../sass/_layout.scss */
-.main form .large-4.middle {
+.main fieldset .large-4.middle {
   padding-left: 1.5%;
   padding-right: 1.5%;
 }
 /* line 352, ../sass/_layout.scss */
-.main form .large-4.right {
+.main fieldset .large-4.right {
   padding-left: 0%;
   padding-right: 3%;
 }
@@ -426,30 +426,30 @@ a {
     width: 100%;
   }
   /* line 411, ../sass/_layout.scss */
-  .main form {
+  .main fieldset {
     font-size: 16px;
   }
   /* line 414, ../sass/_layout.scss */
-  .main form label {
+  .main fieldset label {
     margin-bottom: 10px;
     display: block;
   }
   /* line 425, ../sass/_layout.scss */
-  .main form .large-4 {
+  .main fieldset .large-4 {
     width: 100%;
     padding-left: 0%;
   }
   /* line 430, ../sass/_layout.scss */
-  .main form .large-4 input {
+  .main fieldset .large-4 input {
     margin-right: 10%;
   }
   /* line 434, ../sass/_layout.scss */
-  .main form .large-4.middle {
+  .main fieldset .large-4.middle {
     padding-left: 0%;
     padding-right: 0%;
   }
   /* line 439, ../sass/_layout.scss */
-  .main form .large-4.right {
+  .main fieldset .large-4.right {
     padding-left: 0%;
     padding-right: 0%;
   }
