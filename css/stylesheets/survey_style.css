@@ -312,18 +312,21 @@ a {
   /**end reveal**/
 }
 /* line 286, ../sass/_layout.scss */
-.main .reveal_option {
+.main .reveal_option,
+.main .sub_reveal_option {
   display: none;
   width: 100%;
   float: left;
 }
 /* line 291, ../sass/_layout.scss */
-.main .reveal_option p {
+.main .reveal_option p,
+.main .sub_reveal_option p {
   width: 100%;
   display: block;
 }
 /* line 296, ../sass/_layout.scss */
-.main .reveal_option input {
+.main .reveal_option input,
+.main .sub_reveal_option input {
   width: 30%;
 }
 /* line 302, ../sass/_layout.scss */

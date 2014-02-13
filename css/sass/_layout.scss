@@ -283,7 +283,8 @@ a {
 .main {
 
 	/**reveal**/
-	.reveal_option {
+	.reveal_option,
+	.sub_reveal_option {
 		display: none;
 		width: 100%;
 		float: left;
