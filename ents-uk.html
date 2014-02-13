@@ -18,7 +18,9 @@
 
         <link rel="stylesheet" href="css/stylesheets/survey_style.css">
 
-
+        <style>
+            .hidden { display: block !important; visibility: show; clear: both;}
+        </style>
         <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
     </head>
     <body>
@@ -196,8 +198,8 @@
                             <div class="radio_btn"><a href="#_" data-num="2"></a><p>No</p></div>
                         </div>
 
-                        <input type="checkbox" class="hidden" name="q[6]" value="1" />
-                        <input type="checkbox" class="hidden" name="q[6]" value="2" />
+                        <input type="radio" class="hidden" name="q[6]" value="1" />
+                        <input type="radio" class="hidden" name="q[6]" value="2" />
 
 
                         <div class="divider_strip">
@@ -222,12 +224,12 @@
                             <div class="radio_btn"><a href="#_" data-num="6"></a><p>More than 30</p></div>
                         </div>
 
-                        <input type="checkbox" class="hidden" name="q[7]" value="1" />
-                        <input type="checkbox" class="hidden" name="q[7]" value="2" />
-                        <input type="checkbox" class="hidden" name="q[7]" value="3" />
-                        <input type="checkbox" class="hidden" name="q[7]" value="4" />
-                        <input type="checkbox" class="hidden" name="q[7]" value="5" />
-                        <input type="checkbox" class="hidden" name="q[7]" value="6" />
+                        <input type="radio" class="hidden" name="q[7]" value="1" />
+                        <input type="radio" class="hidden" name="q[7]" value="2" />
+                        <input type="radio" class="hidden" name="q[7]" value="3" />
+                        <input type="radio" class="hidden" name="q[7]" value="4" />
+                        <input type="radio" class="hidden" name="q[7]" value="5" />
+                        <input type="radio" class="hidden" name="q[7]" value="6" />
                         
 
                         <div class="divider_strip">
@@ -248,11 +250,11 @@
                             <div class="radio_btn"><a href="#_" data-num="5"></a><p>More than 35</p></div>
                         </div>
 
-                        <input type="checkbox" class="hidden" name="q[8]" value="1" />
-                        <input type="checkbox" class="hidden" name="q[8]" value="2" />
-                        <input type="checkbox" class="hidden" name="q[8]" value="3" />
-                        <input type="checkbox" class="hidden" name="q[8]" value="4" />
-                        <input type="checkbox" class="hidden" name="q[8]" value="5" />
+                        <input type="radio" class="hidden" name="q[8]" value="1" />
+                        <input type="radio" class="hidden" name="q[8]" value="2" />
+                        <input type="radio" class="hidden" name="q[8]" value="3" />
+                        <input type="radio" class="hidden" name="q[8]" value="4" />
+                        <input type="radio" class="hidden" name="q[8]" value="5" />
 
 
                         <div class="divider_strip">
@@ -323,9 +325,36 @@
 
                     <section>
 
-                        <p class="rob_light"><span class="q_num">11</span> My top sources of information for movies <span class="multiple">Can select multiple answers</span></p>
+                        <p class="rob_light"><span class="q_num">11</span> I generally see films at the cinema:</p>
 
-                        <div class="question slider_circles radio" data-question="11">
+                        <div class="question slider_circles radio slt_single" data-question="11">
+                            <div class="radio_btn"><a href="#_" data-num="1"></a><p>On the opening weekend</p></div>
+                            <div class="radio_btn"><a href="#_" data-num="2"></a><p>Within the first 2 weeks</p></div>
+                            <div class="radio_btn"><a href="#_" data-num="3"></a><p>2-4 weeks after opening</p></div>
+                            <div class="radio_btn"><a href="#_" data-num="4"></a><p>4 or more weeks after opening</p></div>
+                            <div class="radio_btn"><a href="#_" data-num="5"></a><p>Never</p></div>
+                        </div>
+
+
+                        <input type="radio" class="hidden" name="q[11]" value="1" />
+                        <input type="radio" class="hidden" name="q[11]" value="2" />
+                        <input type="radio" class="hidden" name="q[11]" value="3" />
+                        <input type="radio" class="hidden" name="q[11]" value="4" />
+                        <input type="radio" class="hidden" name="q[11]" value="5" />
+
+
+                        <div class="divider_strip">
+                            <img src="img/drop_shadow-divider.jpg" alt="Question diver with drop shadow">
+                        </div>
+
+
+                    </section>
+
+                    <section>
+
+                        <p class="rob_light"><span class="q_num">12</span> My top sources of information for movies <span class="multiple">Can select multiple answers</span></p>
+
+                        <div class="question slider_circles radio" data-question="12">
                             <div class="radio_btn"><a href="#_" data-num="1"></a><p>Family or Friends</p></div>
                             <div class="radio_btn"><a href="#_" data-num="2"></a><p>TV Advertising</p></div>
                             <div class="radio_btn"><a href="#_" data-num="3"></a><p>Cinema Previews</p></div>
@@ -336,12 +365,12 @@
                         </div>
 
 
-                        <input type="radio" class="hidden" name="q[11]" value="1" />
-                        <input type="radio" class="hidden" name="q[11]" value="2" />
-                        <input type="radio" class="hidden" name="q[11]" value="3" />
-                        <input type="radio" class="hidden" name="q[11]" value="4" />
-                        <input type="radio" class="hidden" name="q[11]" value="5" />
-                        <input type="radio" class="hidden" name="q[11]" value="6" />
+                        <input type="checkbox" class="hidden" name="q[12]" value="1" />
+                        <input type="checkbox" class="hidden" name="q[12]" value="2" />
+                        <input type="checkbox" class="hidden" name="q[12]" value="3" />
+                        <input type="checkbox" class="hidden" name="q[12]" value="4" />
+                        <input type="checkbox" class="hidden" name="q[12]" value="5" />
+                        <input type="checkbox" class="hidden" name="q[12]" value="6" />
 
 
 
@@ -355,9 +384,9 @@
 
                     <section>
 
-                        <p class="rob_light"><span class="q_num">12</span> Which genre of movie is your favourite? <span class="multiple">Can select multiple answers</span></p>
+                        <p class="rob_light"><span class="q_num">13</span> Which genre of movie is your favourite? <span class="multiple">Can select multiple answers</span></p>
 
-                        <div class="question slider_circles radio" data-question="12">
+                        <div class="question slider_circles radio" data-question="13">
                             <div class="radio_btn"><a href="#_" data-num="1"></a><p>Action</p></div>
                             <div class="radio_btn"><a href="#_" data-num="2"></a><p>Biography</p></div>
                             <div class="radio_btn"><a href="#_" data-num="3"></a><p>Comedy</p></div>
@@ -372,17 +401,17 @@
 
                         </div>
 
-                        <input type="radio" class="hidden" name="q[12]" value="1" />
-                        <input type="radio" class="hidden" name="q[12]" value="2" />
-                        <input type="radio" class="hidden" name="q[12]" value="3" />
-                        <input type="radio" class="hidden" name="q[12]" value="4" />
-                        <input type="radio" class="hidden" name="q[12]" value="5" />
-                        <input type="radio" class="hidden" name="q[12]" value="6" />
-                        <input type="radio" class="hidden" name="q[12]" value="7" />
-                        <input type="radio" class="hidden" name="q[12]" value="8" />
-                        <input type="radio" class="hidden" name="q[12]" value="9" />
-                        <input type="radio" class="hidden" name="q[12]" value="10" />
-                        <input type="radio" class="hidden" name="q[12]" value="11" />
+                        <input type="checkbox" class="hidden" name="q[13]" value="1" />
+                        <input type="checkbox" class="hidden" name="q[13]" value="2" />
+                        <input type="checkbox" class="hidden" name="q[13]" value="3" />
+                        <input type="checkbox" class="hidden" name="q[13]" value="4" />
+                        <input type="checkbox" class="hidden" name="q[13]" value="5" />
+                        <input type="checkbox" class="hidden" name="q[13]" value="6" />
+                        <input type="checkbox" class="hidden" name="q[13]" value="7" />
+                        <input type="checkbox" class="hidden" name="q[13]" value="8" />
+                        <input type="checkbox" class="hidden" name="q[13]" value="9" />
+                        <input type="checkbox" class="hidden" name="q[13]" value="10" />
+                        <input type="checkbox" class="hidden" name="q[13]" value="11" />
 
                         <div class="divider_strip">
                             <img src="img/drop_shadow-divider.jpg" alt="Question diver with drop shadow">
@@ -393,9 +422,9 @@
 
                     <section>
 
-                        <p class="rob_light"><span class="q_num">13</span> Of the following movies due for release in 2014, which are you most looking forward to?</p>
+                        <p class="rob_light"><span class="q_num">14</span> Of the following movies due for release in 2014, which are you most looking forward to?</p>
 
-                        <div class="question slider_circles radio slt_single" data-question="13">
+                        <div class="question slider_circles radio slt_single" data-question="14">
                             <div class="radio_btn"><a href="#_" data-num="1"></a><p>Need for Speed</p></div>
                             <div class="radio_btn"><a href="#_" data-num="2"></a><p>Captain America 2</p></div>
                             <div class="radio_btn"><a href="#_" data-num="3"></a><p>Amazing Spider Man 2</p></div>
@@ -410,18 +439,18 @@
                             <div class="radio_btn"><a href="#_" data-num="12"></a><p>The Hobbit: There and Back Again</p></div>
                         </div>
 
-                        <input type="checkbox" class="hidden" name="q[13]" value="1" />
-                        <input type="checkbox" class="hidden" name="q[13]" value="2" />
-                        <input type="checkbox" class="hidden" name="q[13]" value="3" />
-                        <input type="checkbox" class="hidden" name="q[13]" value="4" />
-                        <input type="checkbox" class="hidden" name="q[13]" value="5" />
-                        <input type="checkbox" class="hidden" name="q[13]" value="6" />
-                        <input type="checkbox" class="hidden" name="q[13]" value="7" />
-                        <input type="checkbox" class="hidden" name="q[13]" value="8" />
-                        <input type="checkbox" class="hidden" name="q[13]" value="9" />
-                        <input type="checkbox" class="hidden" name="q[13]" value="10" />
-                        <input type="checkbox" class="hidden" name="q[13]" value="11" />
-                        <input type="checkbox" class="hidden" name="q[13]" value="12" />
+                        <input type="radio" class="hidden" name="q[14]" value="1" />
+                        <input type="radio" class="hidden" name="q[14]" value="2" />
+                        <input type="radio" class="hidden" name="q[14]" value="3" />
+                        <input type="radio" class="hidden" name="q[14]" value="4" />
+                        <input type="radio" class="hidden" name="q[14]" value="5" />
+                        <input type="radio" class="hidden" name="q[14]" value="6" />
+                        <input type="radio" class="hidden" name="q[14]" value="7" />
+                        <input type="radio" class="hidden" name="q[14]" value="8" />
+                        <input type="radio" class="hidden" name="q[14]" value="9" />
+                        <input type="radio" class="hidden" name="q[14]" value="10" />
+                        <input type="radio" class="hidden" name="q[14]" value="11" />
+                        <input type="radio" class="hidden" name="q[14]" value="12" />
 
                         <div class="divider_strip">
                             <img src="img/drop_shadow-divider.jpg" alt="Question diver with drop shadow">
@@ -432,9 +461,9 @@
 
                     <section>
 
-                        <p class="rob_light"><span class="q_num">14</span> I usually watch movies and TV shows with</p>
+                        <p class="rob_light"><span class="q_num">15</span> I usually watch movies and TV shows with</p>
 
-                        <div class="question slider_circles radio slt_single" data-question="14">
+                        <div class="question slider_circles radio slt_single" data-question="15">
                             <div class="radio_btn"><a href="#_" data-num="1"></a><p>Friends</p></div>
                             <div class="radio_btn"><a href="#_" data-num="2"></a><p>Partner or Spouse</p></div>
                             <div class="radio_btn"><a href="#_" data-num="3"></a><p>Family</p></div>
@@ -442,10 +471,10 @@
                         </div>
 
 
-                        <input type="checkbox" class="hidden" name="q[14]" value="1" />
-                        <input type="checkbox" class="hidden" name="q[14]" value="2" />
-                        <input type="checkbox" class="hidden" name="q[14]" value="3" />
-                        <input type="checkbox" class="hidden" name="q[14]" value="4" />
+                        <input type="radio" class="hidden" name="q[15]" value="1" />
+                        <input type="radio" class="hidden" name="q[15]" value="2" />
+                        <input type="radio" class="hidden" name="q[15]" value="3" />
+                        <input type="radio" class="hidden" name="q[15]" value="4" />
 
 
                         <div class="divider_strip">
@@ -456,9 +485,9 @@
 
                     <section>
 
-                        <p class="rob_light"><span class="q_num">15</span> My reasons for choosing a movie to watch are most influenced by </p>
+                        <p class="rob_light"><span class="q_num">16</span> My reasons for choosing a movie to watch are most influenced by </p>
 
-                        <div class="question slider_circles radio slt_single" data-question="15">
+                        <div class="question slider_circles radio slt_single" data-question="16">
                             <div class="radio_btn"><a href="#_" data-num="1"></a><p>The trailer</p></div>
                             <div class="radio_btn"><a href="#_" data-num="2"></a><p>The cast</p></div>
                             <div class="radio_btn"><a href="#_" data-num="3"></a><p>Word of mouth</p></div>
@@ -467,46 +496,22 @@
                             <div class="radio_btn"><a href="#_" data-num="6"></a><p>Another film from the series</p></div>
                         </div>
 
-                        <input type="checkbox" class="hidden" name="q[15]" value="1" />
-                        <input type="checkbox" class="hidden" name="q[15]" value="2" />
-                        <input type="checkbox" class="hidden" name="q[15]" value="3" />
-                        <input type="checkbox" class="hidden" name="q[15]" value="4" />
-                        <input type="checkbox" class="hidden" name="q[15]" value="5" />
-                        <input type="checkbox" class="hidden" name="q[15]" value="6" />
-
-                        <div class="divider_strip">
-                            <img src="img/drop_shadow-divider.jpg" alt="Question diver with drop shadow">
-                        </div>
-
-                    </section>
-
-                    <section>
-
-                        <p class="rob_light"><span class="q_num">16</span> Why would you be most likely to buy/rent a DVD/Blu-Ray?</p>
-
-                        <div class="question slider_circles radio slt_single" data-question="16">
-                            <div class="radio_btn"><a href="#_" data-num="1"></a><p>Missed the film at the cinema</p></div>
-                            <div class="radio_btn"><a href="#_" data-num="2"></a><p>Prefer the environment of my own home</p></div>
-                            <div class="radio_btn"><a href="#_" data-num="3"></a><p>Want something to keep/collect</p></div>
-                        </div>
-
                         <input type="radio" class="hidden" name="q[16]" value="1" />
                         <input type="radio" class="hidden" name="q[16]" value="2" />
                         <input type="radio" class="hidden" name="q[16]" value="3" />
-
+                        <input type="radio" class="hidden" name="q[16]" value="4" />
+                        <input type="radio" class="hidden" name="q[16]" value="5" />
+                        <input type="radio" class="hidden" name="q[16]" value="6" />
 
                         <div class="divider_strip">
                             <img src="img/drop_shadow-divider.jpg" alt="Question diver with drop shadow">
                         </div>
 
-
                     </section>
-
-
 
                     <section>
 
-                        <p class="rob_light"><span class="q_num">17</span> How regularly do you read the movie content on AskMen?</p>
+                        <p class="rob_light"><span class="q_num">17</span> Why would you be most likely to buy/rent a DVD/Blu-Ray?</p>
 
                         <div class="question slider_circles radio slt_single" data-question="17">
                             <div class="radio_btn"><a href="#_" data-num="1"></a><p>Missed the film at the cinema</p></div>
@@ -517,6 +522,30 @@
                         <input type="radio" class="hidden" name="q[17]" value="1" />
                         <input type="radio" class="hidden" name="q[17]" value="2" />
                         <input type="radio" class="hidden" name="q[17]" value="3" />
+
+
+                        <div class="divider_strip">
+                            <img src="img/drop_shadow-divider.jpg" alt="Question diver with drop shadow">
+                        </div>
+
+
+                    </section>
+
+
+
+                    <section>
+
+                        <p class="rob_light"><span class="q_num">18</span> How regularly do you read the movie content on AskMen?</p>
+
+                        <div class="question slider_circles radio slt_single" data-question="18">
+                            <div class="radio_btn"><a href="#_" data-num="1"></a><p>Never</p></div>
+                            <div class="radio_btn"><a href="#_" data-num="2"></a><p>Weekly</p></div>
+                            <div class="radio_btn"><a href="#_" data-num="3"></a><p>Monthly</p></div>
+                        </div>
+
+                        <input type="radio" class="hidden" name="q[18]" value="1" />
+                        <input type="radio" class="hidden" name="q[18]" value="2" />
+                        <input type="radio" class="hidden" name="q[18]" value="3" />
                         
                         <div class="divider_strip">
                             <img src="img/drop_shadow-divider.jpg" alt="Question diver with drop shadow">
@@ -538,40 +567,9 @@
 
                     <section>
 
-                        <p class="rob_light"><span class="q_num">18</span> I seek out information about video games before they’re released</p>
+                        <p class="rob_light"><span class="q_num">19</span> I seek out information about video games before they’re released</p>
                         <div id="slider_wrapper4">
-                            <ul class="question slider_circles radio slt_single" id="circles4" data-question="18">
-                                <li data-num="1" class="full"><span></span></li>
-                                <li data-num="2"></li>
-                                <li data-num="3"></li>
-                                <li data-num="4"></li>
-                                <li data-num="5" class="last"></li>
-                            </ul>
-
-                            <input type="radio" class="hidden" name="q[18]" value="1" checked>
-                            <input type="radio" class="hidden" name="q[18]" value="2">
-                            <input type="radio" class="hidden" name="q[18]" value="3">
-                            <input type="radio" class="hidden" name="q[18]" value="4">
-                            <input type="radio" class="hidden" name="q[18]" value="5">
-
-
-                            <ul class="agree">
-                                <li>Agree</li>
-                                <li>Neutral</li>
-                                <li>Disagree</li>
-                            </ul>
-                        </div>
-
-                        <div class="divider_strip">
-                            <img src="img/drop_shadow-divider.jpg" alt="Question diver with drop shadow">
-                        </div>
-                    </section>
-
-                    <section>
-
-                        <p class="rob_light"><span class="q_num">19</span> Being 'in the know' about video games before my friends are is important to me</p>
-                        <div id="slider_wrapper5">
-                            <ul class="question slider_circles radio slt_single" id="circles5" data-question="19">
+                            <ul class="question slider_circles radio slt_single" id="circles4" data-question="19">
                                 <li data-num="1" class="full"><span></span></li>
                                 <li data-num="2"></li>
                                 <li data-num="3"></li>
@@ -591,7 +589,6 @@
                                 <li>Neutral</li>
                                 <li>Disagree</li>
                             </ul>
-
                         </div>
 
                         <div class="divider_strip">
@@ -601,9 +598,9 @@
 
                     <section>
 
-                        <p class="rob_light"><span class="q_num">20</span> I regularly share my thoughts about video games on social media </p>
-                        <div id="slider_wrapper6">
-                            <ul class="question slider_circles radio slt_single" id="circles6" data-question="20">
+                        <p class="rob_light"><span class="q_num">20</span> Being 'in the know' about video games before my friends are is important to me</p>
+                        <div id="slider_wrapper5">
+                            <ul class="question slider_circles radio slt_single" id="circles5" data-question="20">
                                 <li data-num="1" class="full"><span></span></li>
                                 <li data-num="2"></li>
                                 <li data-num="3"></li>
@@ -619,21 +616,23 @@
 
 
                             <ul class="agree">
-                                 <li>Agree</li>
+                                <li>Agree</li>
                                 <li>Neutral</li>
                                 <li>Disagree</li>
                             </ul>
 
                         </div>
 
-
+                        <div class="divider_strip">
+                            <img src="img/drop_shadow-divider.jpg" alt="Question diver with drop shadow">
+                        </div>
                     </section>
 
                     <section>
 
-                        <p class="rob_light"><span class="q_num">21</span> I prefer to buy physical copies of games</p>
-                        <div id="slider_wrapper7">
-                            <ul class="question slider_circles radio slt_single" id="circles7" data-question="21">
+                        <p class="rob_light"><span class="q_num">21</span> I regularly share my thoughts about video games on social media </p>
+                        <div id="slider_wrapper6">
+                            <ul class="question slider_circles radio slt_single" id="circles6" data-question="21">
                                 <li data-num="1" class="full"><span></span></li>
                                 <li data-num="2"></li>
                                 <li data-num="3"></li>
@@ -649,20 +648,21 @@
 
 
                             <ul class="agree">
-                                <li>Agree</li>
+                                 <li>Agree</li>
                                 <li>Neutral</li>
                                 <li>Disagree</li>
                             </ul>
 
                         </div>
 
+
                     </section>
 
                     <section>
 
-                        <p class="rob_light"><span class="q_num">22</span> I prefer to buy digital copies of games</p>
-                        <div id="slider_wrapper8">
-                            <ul class="question slider_circles radio slt_single" id="circles8" data-question="22">
+                        <p class="rob_light"><span class="q_num">22</span> I prefer to buy physical copies of games</p>
+                        <div id="slider_wrapper7">
+                            <ul class="question slider_circles radio slt_single" id="circles7" data-question="22">
                                 <li data-num="1" class="full"><span></span></li>
                                 <li data-num="2"></li>
                                 <li data-num="3"></li>
@@ -689,9 +689,9 @@
 
                     <section>
 
-                        <p class="rob_light"><span class="q_num">23</span> I prefer to play video games with friends rather than on my own</p>
-                        <div id="slider_wrapper9">
-                            <ul class="question slider_circles radio slt_single" id="circles9" data-question="23">
+                        <p class="rob_light"><span class="q_num">23</span> I prefer to buy digital copies of games</p>
+                        <div id="slider_wrapper8">
+                            <ul class="question slider_circles radio slt_single" id="circles8" data-question="23">
                                 <li data-num="1" class="full"><span></span></li>
                                 <li data-num="2"></li>
                                 <li data-num="3"></li>
@@ -716,6 +716,35 @@
 
                     </section>
 
+                    <section>
+
+                        <p class="rob_light"><span class="q_num">24</span> I prefer to play video games with friends rather than on my own</p>
+                        <div id="slider_wrapper9">
+                            <ul class="question slider_circles radio slt_single" id="circles9" data-question="24">
+                                <li data-num="1" class="full"><span></span></li>
+                                <li data-num="2"></li>
+                                <li data-num="3"></li>
+                                <li data-num="4"></li>
+                                <li data-num="5" class="last"></li>
+                            </ul>
+
+                            <input type="radio" class="hidden" name="q[24]" value="1" checked>
+                            <input type="radio" class="hidden" name="q[24]" value="2">
+                            <input type="radio" class="hidden" name="q[24]" value="3">
+                            <input type="radio" class="hidden" name="q[24]" value="4">
+                            <input type="radio" class="hidden" name="q[24]" value="5">
+
+
+                            <ul class="agree">
+                                <li>Agree</li>
+                                <li>Neutral</li>
+                                <li>Disagree</li>
+                            </ul>
+
+                        </div>
+
+                    </section>
+
 
                     <div class="divider_img">
                         <img src="img/divider_image-bythenumbers.jpg" alt="Question diver with drop shadow">
@@ -723,19 +752,19 @@
 
                     <section>
 
-                        <p class="rob_light"><span class="q_num">24</span> My top sources of information for video games</p>
+                        <p class="rob_light"><span class="q_num">25</span> My top sources of information for video games</p>
 
-                        <div class="question slider_circles radio slt_single" data-question="24">
+                        <div class="question slider_circles radio slt_single" data-question="25">
                             <div class="radio_btn"><a href="#_" data-num="1"></a><p>Family or Friends</p></div>
                             <div class="radio_btn"><a href="#_" data-num="2"></a><p>Advertising</p></div>
                             <div class="radio_btn"><a href="#_" data-num="3"></a><p>Printed Magazines</p></div>
                             <div class="radio_btn"><a href="#_" data-num="4"></a><p>Online</p></div>
                         </div>
 
-                        <input type="radio" class="hidden" name="q[24]" value="1" />
-                        <input type="radio" class="hidden" name="q[24]" value="2" />
-                        <input type="radio" class="hidden" name="q[24]" value="3" />
-                        <input type="radio" class="hidden" name="q[24]" value="4" />
+                        <input type="radio" class="hidden" name="q[25]" value="1" />
+                        <input type="radio" class="hidden" name="q[25]" value="2" />
+                        <input type="radio" class="hidden" name="q[25]" value="3" />
+                        <input type="radio" class="hidden" name="q[25]" value="4" />
 
                         <div class="divider_strip">
                             <img src="img/drop_shadow-divider.jpg" alt="Question diver with drop shadow">
@@ -745,9 +774,9 @@
 
                     <section>
 
-                        <p class="rob_light"><span class="q_num">25</span> When are you considering buying a new generation console? (PS4, Wii U or XBox One)</p>
+                        <p class="rob_light"><span class="q_num">26</span> When are you considering buying a new generation console? (PS4, Wii U or XBox One)</p>
 
-                        <div class="question slider_circles radio slt_single" data-question="25">
+                        <div class="question slider_circles radio slt_single" data-question="26">
                             <div class="radio_btn"><a href="#_" data-num="1"></a><p>Within 3 Months</p></div>
                             <div class="radio_btn"><a href="#_" data-num="2"></a><p>Within 6 Months</p></div>
                             <div class="radio_btn"><a href="#_" data-num="3"></a><p>Within a Year</p></div>
@@ -755,11 +784,11 @@
                             <div class="radio_btn"><a href="#_" data-num="5"></a><p>I Don't Plan to Buy One</p></div>
                         </div>
 
-                        <input type="checkbox" class="hidden" name="q[25]" value="1" />
-                        <input type="checkbox" class="hidden" name="q[25]" value="2" />
-                        <input type="checkbox" class="hidden" name="q[25]" value="3" />
-                        <input type="checkbox" class="hidden" name="q[25]" value="4" />
-                        <input type="checkbox" class="hidden" name="q[25]" value="5" />
+                        <input type="radio" class="hidden" name="q[26]" value="1" />
+                        <input type="radio" class="hidden" name="q[26]" value="2" />
+                        <input type="radio" class="hidden" name="q[26]" value="3" />
+                        <input type="radio" class="hidden" name="q[26]" value="4" />
+                        <input type="radio" class="hidden" name="q[26]" value="5" />
 
                         <div class="divider_strip">
                             <img src="img/drop_shadow-divider.jpg" alt="Question diver with drop shadow">
@@ -771,20 +800,20 @@
 
                     <section>
 
-                        <p class="rob_light"><span class="q_num">26</span> If you haven’t already, do you intend to buy one of the new generation of consoles?</p>
+                        <p class="rob_light"><span class="q_num">27</span> If you haven’t already, do you intend to buy one of the new generation of consoles?</p>
 
 
-                         <div class="question slider_circles radio slt_single" data-question="26">
+                         <div class="question slider_circles radio slt_single" data-question="27">
                             <div class="radio_btn"><a href="#_" data-num="1"></a><p>Xbox One</p></div>
                             <div class="radio_btn"><a href="#_" data-num="2"></a><p>PS4</p></div>
                             <div class="radio_btn"><a href="#_" data-num="3"></a><p>Wii U</p></div>
                             <div class="radio_btn"><a href="#_" data-num="4"></a><p>I Do Not Intend to Buy One</p></div>
                         </div>
 
-                        <input type="checkbox" class="hidden" name="q[26]" value="1" />
-                        <input type="checkbox" class="hidden" name="q[26]" value="2" />
-                        <input type="checkbox" class="hidden" name="q[26]" value="3" />
-                        <input type="checkbox" class="hidden" name="q[26]" value="4" />
+                        <input type="radio" class="hidden" name="q[27]" value="1" />
+                        <input type="radio" class="hidden" name="q[27]" value="2" />
+                        <input type="radio" class="hidden" name="q[27]" value="3" />
+                        <input type="radio" class="hidden" name="q[27]" value="4" />
 
                         <div class="divider_strip">
                             <img src="img/drop_shadow-divider.jpg" alt="Question diver with drop shadow">
@@ -794,9 +823,9 @@
 
                     <section>
 
-                        <p class="rob_light"><span class="q_num">27</span> What would most likely influence the purchase of a new generation console?</p>
+                        <p class="rob_light"><span class="q_num">28</span> What would most likely influence the purchase of a new generation console?</p>
 
-                        <div class="question slider_circles radio slt_single" data-question="27">
+                        <div class="question slider_circles radio slt_single" data-question="28">
                             <div class="radio_btn"><a href="#_" data-num="1"></a><p>Advertising</p></div>
                             <div class="radio_btn"><a href="#_" data-num="2"></a><p>Reviews</p></div>
                             <div class="radio_btn"><a href="#_" data-num="3"></a><p>Games Available</p></div>
@@ -804,11 +833,11 @@
                             <div class="radio_btn"><a href="#_" data-num="5"></a><p>I'd Want to Buy the Same Console as my Friends</p></div>
                         </div>
 
-                        <input type="checkbox" class="hidden" name="q[27]" value="1" />
-                        <input type="checkbox" class="hidden" name="q[27]" value="2" />
-                        <input type="checkbox" class="hidden" name="q[27]" value="3" />
-                        <input type="checkbox" class="hidden" name="q[27]" value="4" />
-                        <input type="checkbox" class="hidden" name="q[27]" value="5" />
+                        <input type="radio" class="hidden" name="q[28]" value="1" />
+                        <input type="radio" class="hidden" name="q[28]" value="2" />
+                        <input type="radio" class="hidden" name="q[28]" value="3" />
+                        <input type="radio" class="hidden" name="q[28]" value="4" />
+                        <input type="radio" class="hidden" name="q[28]" value="5" />
 
 
                         <div class="divider_strip">
@@ -821,19 +850,19 @@
 
                     <section>
 
-                        <p class="rob_light"><span class="q_num">28</span> How many games per year do you typically buy?</p>
+                        <p class="rob_light"><span class="q_num">29</span> How many games per year do you typically buy?</p>
 
-                        <div class="question slider_circles radio slt_single" data-question="28">
+                        <div class="question slider_circles radio slt_single" data-question="29">
                             <div class="radio_btn"><a href="#_" data-num="1"></a><p>0</p></div>
                             <div class="radio_btn"><a href="#_" data-num="2"></a><p>1-3</p></div>
                             <div class="radio_btn"><a href="#_" data-num="3"></a><p>4-10</p></div>
                             <div class="radio_btn"><a href="#_" data-num="4"></a><p>11+</p></div>
                         </div>
 
-                        <input type="radio" class="hidden" name="q[28]" value="1" />
-                        <input type="radio" class="hidden" name="q[28]" value="2" />
-                        <input type="radio" class="hidden" name="q[28]" value="3" />
-                        <input type="radio" class="hidden" name="q[28]" value="4" />
+                        <input type="radio" class="hidden" name="q[29]" value="1" />
+                        <input type="radio" class="hidden" name="q[29]" value="2" />
+                        <input type="radio" class="hidden" name="q[29]" value="3" />
+                        <input type="radio" class="hidden" name="q[29]" value="4" />
 
                         <div class="divider_strip">
                             <img src="img/drop_shadow-divider.jpg" alt="Question diver with drop shadow">
@@ -845,9 +874,9 @@
 
                     <section>
 
-                        <p class="rob_light"><span class="q_num">29</span> Do you play video games online?</p>
+                        <p class="rob_light"><span class="q_num">30</span> Do you play video games online?</p>
 
-                        <div class="question slider_circles radio slt_single" data-question="29">
+                        <div class="question slider_circles radio slt_single" data-question="30">
                             <div class="radio_btn"><a href="#_" class="reveal_anchor" data-num="1"></a><p>Yes</p></div>
                             <div class="radio_btn"><a href="#_" data-num="2"></a><p>No</p></div>
                         </div>
@@ -856,7 +885,7 @@
                             
                             <p class="rob_light">I usually play video games online with</p>
                             
-                            <div class="question slider_circles radio slt_single" data-question="29">
+                            <div class="question slider_circles radio slt_single" data-question="30">
                             
                                 <div class="radio_btn"><a href="#_" data-num="3"></a><p>Friends</p></div>
                                 <div class="radio_btn"><a href="#_" data-num="4"></a><p>Family</p></div>
@@ -864,32 +893,6 @@
                             
                             </div>
 
-                        </div>
-
-                        <input type="radio" class="hidden" name="q[29]" value="1" />
-                        <input type="radio" class="hidden" name="q[29]" value="2" />
-                        <input type="radio" class="hidden" name="q[29]" value="3" />
-                        <input type="radio" class="hidden" name="q[29]" value="4" />
-                        <input type="radio" class="hidden" name="q[29]" value="5" />
-
-                        <div class="divider_strip">
-                            <img src="img/drop_shadow-divider.jpg" alt="Question diver with drop shadow">
-                        </div>
-
-
-                    </section>
-
-
-                    <section>
-
-                        <p class="rob_light"><span class="q_num">30</span> I play video games</p>
-
-                        <div class="question slider_circles radio slt_single" data-question="30">
-                            <div class="radio_btn"><a href="#_" data-num="1"></a><p>0-1 hour per week</p></div>
-                            <div class="radio_btn"><a href="#_" data-num="2"></a><p>1-4 hours per week</p></div>
-                            <div class="radio_btn"><a href="#_" data-num="3"></a><p>5-8 hours per week</p></div>
-                            <div class="radio_btn"><a href="#_" data-num="4"></a><p>9-19 hours per week</p></div>
-                            <div class="radio_btn"><a href="#_" data-num="5"></a><p>20+ hours per week</p></div>
                         </div>
 
                         <input type="radio" class="hidden" name="q[30]" value="1" />
@@ -908,9 +911,35 @@
 
                     <section>
 
-                        <p class="rob_light"><span class="q_num">31</span> My favourite type of game is</p>
+                        <p class="rob_light"><span class="q_num">31</span> I play video games</p>
 
                         <div class="question slider_circles radio slt_single" data-question="31">
+                            <div class="radio_btn"><a href="#_" data-num="1"></a><p>0-1 hour per week</p></div>
+                            <div class="radio_btn"><a href="#_" data-num="2"></a><p>1-4 hours per week</p></div>
+                            <div class="radio_btn"><a href="#_" data-num="3"></a><p>5-8 hours per week</p></div>
+                            <div class="radio_btn"><a href="#_" data-num="4"></a><p>9-19 hours per week</p></div>
+                            <div class="radio_btn"><a href="#_" data-num="5"></a><p>20+ hours per week</p></div>
+                        </div>
+
+                        <input type="radio" class="hidden" name="q[31]" value="1" />
+                        <input type="radio" class="hidden" name="q[31]" value="2" />
+                        <input type="radio" class="hidden" name="q[31]" value="3" />
+                        <input type="radio" class="hidden" name="q[31]" value="4" />
+                        <input type="radio" class="hidden" name="q[31]" value="5" />
+
+                        <div class="divider_strip">
+                            <img src="img/drop_shadow-divider.jpg" alt="Question diver with drop shadow">
+                        </div>
+
+
+                    </section>
+
+
+                    <section>
+
+                        <p class="rob_light"><span class="q_num">32</span> My favourite type of game is</p>
+
+                        <div class="question slider_circles radio slt_single" data-question="32">
                             <div class="radio_btn"><a href="#_" data-num="1"></a><p>Sports</p></div>
                             <div class="radio_btn"><a href="#_" data-num="2"></a><p>First Person Shooter</p></div>
                             <div class="radio_btn"><a href="#_" data-num="3"></a><p>RPG</p></div>
@@ -923,15 +952,15 @@
 
                         </div>
 
-                        <input type="radio" class="hidden" name="q[31]" value="1" />
-                        <input type="radio" class="hidden" name="q[31]" value="2" />
-                        <input type="radio" class="hidden" name="q[31]" value="3" />
-                        <input type="radio" class="hidden" name="q[31]" value="4" />
-                        <input type="radio" class="hidden" name="q[31]" value="5" />
-                        <input type="radio" class="hidden" name="q[31]" value="6" />
-                        <input type="radio" class="hidden" name="q[31]" value="7" />
-                        <input type="radio" class="hidden" name="q[31]" value="8" />
-                        <input type="radio" class="hidden" name="q[31]" value="9" />
+                        <input type="radio" class="hidden" name="q[32]" value="1" />
+                        <input type="radio" class="hidden" name="q[32]" value="2" />
+                        <input type="radio" class="hidden" name="q[32]" value="3" />
+                        <input type="radio" class="hidden" name="q[32]" value="4" />
+                        <input type="radio" class="hidden" name="q[32]" value="5" />
+                        <input type="radio" class="hidden" name="q[32]" value="6" />
+                        <input type="radio" class="hidden" name="q[32]" value="7" />
+                        <input type="radio" class="hidden" name="q[32]" value="8" />
+                        <input type="radio" class="hidden" name="q[32]" value="9" />
 
                         <div class="divider_strip">
                             <img src="img/drop_shadow-divider.jpg" alt="Question diver with drop shadow">
@@ -942,9 +971,9 @@
 
                     <section>
 
-                        <p class="rob_light"><span class="q_num">32</span> I play video games on <span class="multiple">Can select multiple answers</span></p>
+                        <p class="rob_light"><span class="q_num">33</span> I play video games on <span class="multiple">Can select multiple answers</span></p>
 
-                        <div class="question slider_circles radio" data-question="32">
+                        <div class="question slider_circles radio" data-question="33">
                             <div class="radio_btn"><a href="#_" data-num="1"></a><p>PS3</p></div>
                             <div class="radio_btn"><a href="#_" data-num="2"></a><p>Xbox 360</p></div>
                             <div class="radio_btn"><a href="#_" data-num="3"></a><p>PC</p></div>
@@ -956,15 +985,15 @@
                             <div class="radio_btn"><a href="#_" data-num="9"></a><p>Nintendo 3DS</p></div>
                         </div>
 
-                        <input type="checkbox" class="hidden" name="q[32]" value="1" />
-                        <input type="checkbox" class="hidden" name="q[32]" value="2" />
-                        <input type="checkbox" class="hidden" name="q[32]" value="3" />
-                        <input type="checkbox" class="hidden" name="q[32]" value="4" />
-                        <input type="checkbox" class="hidden" name="q[32]" value="5" />
-                        <input type="checkbox" class="hidden" name="q[32]" value="6" />
-                        <input type="checkbox" class="hidden" name="q[32]" value="7" />
-                        <input type="checkbox" class="hidden" name="q[32]" value="8" />
-                        <input type="checkbox" class="hidden" name="q[32]" value="9" />
+                        <input type="checkbox" class="hidden" name="q[33]" value="1" />
+                        <input type="checkbox" class="hidden" name="q[33]" value="2" />
+                        <input type="checkbox" class="hidden" name="q[33]" value="3" />
+                        <input type="checkbox" class="hidden" name="q[33]" value="4" />
+                        <input type="checkbox" class="hidden" name="q[33]" value="5" />
+                        <input type="checkbox" class="hidden" name="q[33]" value="6" />
+                        <input type="checkbox" class="hidden" name="q[33]" value="7" />
+                        <input type="checkbox" class="hidden" name="q[33]" value="8" />
+                        <input type="checkbox" class="hidden" name="q[33]" value="9" />
 
                         <div class="divider_strip">
                             <img src="img/drop_shadow-divider.jpg" alt="Question diver with drop shadow">
@@ -975,9 +1004,9 @@
 
                     <section>
 
-                        <p class="rob_light"><span class="q_num">33</span> Which of the following games franchise do you have the most affection for <span class="multiple">Can select multiple answers</span></p>
+                        <p class="rob_light"><span class="q_num">34</span> Which of the following games franchise do you have the most affection for <span class="multiple">Can select multiple answers</span></p>
 
-                        <div class="question slider_circles radio" data-question="33">
+                        <div class="question slider_circles radio" data-question="34">
                             <div class="radio_btn"><a href="#_" data-num="1"></a><p>Mario</p></div>
                             <div class="radio_btn"><a href="#_" data-num="2"></a><p>Sonic</p></div>
                             <div class="radio_btn"><a href="#_" data-num="3"></a><p>Call of Duty</p></div>
@@ -991,16 +1020,16 @@
                         </div>
 
 
-                        <input type="checkbox" class="hidden" name="q[33]" value="1" />
-                        <input type="checkbox" class="hidden" name="q[33]" value="2" />
-                        <input type="checkbox" class="hidden" name="q[33]" value="3" />
-                        <input type="checkbox" class="hidden" name="q[33]" value="4" />
-                        <input type="checkbox" class="hidden" name="q[33]" value="5" />
-                        <input type="checkbox" class="hidden" name="q[33]" value="6" />
-                        <input type="checkbox" class="hidden" name="q[33]" value="7" />
-                        <input type="checkbox" class="hidden" name="q[33]" value="8" />
-                        <input type="checkbox" class="hidden" name="q[33]" value="9" />
-                        <input type="checkbox" class="hidden" name="q[33]" value="10" />
+                        <input type="checkbox" class="hidden" name="q[34]" value="1" />
+                        <input type="checkbox" class="hidden" name="q[34]" value="2" />
+                        <input type="checkbox" class="hidden" name="q[34]" value="3" />
+                        <input type="checkbox" class="hidden" name="q[34]" value="4" />
+                        <input type="checkbox" class="hidden" name="q[34]" value="5" />
+                        <input type="checkbox" class="hidden" name="q[34]" value="6" />
+                        <input type="checkbox" class="hidden" name="q[34]" value="7" />
+                        <input type="checkbox" class="hidden" name="q[34]" value="8" />
+                        <input type="checkbox" class="hidden" name="q[34]" value="9" />
+                        <input type="checkbox" class="hidden" name="q[34]" value="10" />
 
                         <div class="divider_strip">
                             <img src="img/drop_shadow-divider.jpg" alt="Question diver with drop shadow">
@@ -1010,19 +1039,19 @@
 
                     <section>
 
-                        <p class="rob_light"><span class="q_num">34</span> Where do you normally buy games? <span class="multiple">Can select multiple answers</span></p>
+                        <p class="rob_light"><span class="q_num">35</span> Where do you normally buy games? <span class="multiple">Can select multiple answers</span></p>
 
-                        <div class="question slider_circles radio" data-question="34">
+                        <div class="question slider_circles radio" data-question="35">
                             <div class="radio_btn"><a href="#_" data-num="1"></a><p>A High Street Retailer In-Store (e.g. GAME, HMV etc)</p></div>
                             <div class="radio_btn"><a href="#_" data-num="2"></a><p>A High Street Retailer Online (e.g. GAME.co.uk etc)</p></div>
                             <div class="radio_btn"><a href="#_" data-num="3"></a><p>Online-Only Retailer (e.g. Amazon, Play etc)</p></div>
                             <div class="radio_btn"><a href="#_" data-num="4"></a><p>Download Service (e.g. Steam, Origin etc)</p></div>
                         </div>
 
-                        <input type="checkbox" class="hidden" name="q[15]" value="1" />
-                        <input type="checkbox" class="hidden" name="q[15]" value="2" />
-                        <input type="checkbox" class="hidden" name="q[15]" value="3" />
-                        <input type="checkbox" class="hidden" name="q[15]" value="4" />
+                        <input type="checkbox" class="hidden" name="q[35]" value="1" />
+                        <input type="checkbox" class="hidden" name="q[35]" value="2" />
+                        <input type="checkbox" class="hidden" name="q[35]" value="3" />
+                        <input type="checkbox" class="hidden" name="q[35]" value="4" />
 
                         <div class="divider_strip">
                             <img src="img/drop_shadow-divider.jpg" alt="Question diver with drop shadow">
@@ -1032,9 +1061,9 @@
 
                     <section>
 
-                        <p class="rob_light"><span class="q_num">35</span> My preferred retailer is</p>
+                        <p class="rob_light"><span class="q_num">36</span> My preferred retailer is</p>
 
-                        <div class="question slider_circles radio slt_single" data-question="35">
+                        <div class="question slider_circles radio slt_single" data-question="36">
                             <div class="radio_btn"><a href="#_" data-num="1"></a><p>GAME</p></div>
                             <div class="radio_btn"><a href="#_" data-num="2"></a><p>Amazon</p></div>
                             <div class="radio_btn"><a href="#_" data-num="3"></a><p>eBay</p></div>
@@ -1044,59 +1073,14 @@
                             <div class="radio_btn"><a href="#_" data-num="7" class="reveal_anchor"></a><p>Other</p></div>
                         </div>
 
-                        <input type="radio" class="hidden" name="q[35]" value="1" />
-                        <input type="radio" class="hidden" name="q[35]" value="2" />
-                        <input type="radio" class="hidden" name="q[35]" value="3" />
-                        <input type="radio" class="hidden" name="q[35]" value="4" />
-                        <input type="radio" class="hidden" name="q[35]" value="5" />
-                        <input type="radio" class="hidden" name="q[35]" value="6" />
-
-                        <div class="reveal_option">
-                            <input type="text" value="" id="q_35" name="q[35_b]" class="text"/>
-                        </div>
-
-                        <div class="divider_strip">
-                            <img src="img/drop_shadow-divider.jpg" alt="Question diver with drop shadow">
-                        </div>
-
-
-                    </section>
-
-                    <section>
-
-                        <p class="rob_light"><span class="q_num">36</span> Do you play games on your phone?</p>
-
-                        <div class="question slider_circles radio slt_single" data-question="36">
-                            <div class="radio_btn"><a href="#_" data-num="1" class="reveal_anchor"></a><p>Yes</p></div>
-                            <div class="radio_btn"><a href="#_" data-num="2"></a><p>No</p></div>
-                        </div>
-
-                        <div class="reveal_option">
-                            
-                            <p class="rob_light">Which make of phone do you have?</p>
-                            
-                            <div class="question slider_circles radio slt_single" data-question="36">
-                            
-                                <div class="radio_btn"><a href="#_" data-num="3"></a><p>iOS</p></div>
-                                <div class="radio_btn"><a href="#_" data-num="4"></a><p>Android</p></div>
-                                <div class="radio_btn"><a href="#_" data-num="5"></a><p>Blackberry</p></div>
-                                <div class="radio_btn"><a href="#_" data-num="6"></a><p>Windows</p></div>
-                                <div class="radio_btn"><a href="#_" data-num="7" class="sub_reveal_anchor"></a><p>Other</p></div>
-
-                            </div>
-
-                        </div>
-
                         <input type="radio" class="hidden" name="q[36]" value="1" />
                         <input type="radio" class="hidden" name="q[36]" value="2" />
                         <input type="radio" class="hidden" name="q[36]" value="3" />
                         <input type="radio" class="hidden" name="q[36]" value="4" />
                         <input type="radio" class="hidden" name="q[36]" value="5" />
                         <input type="radio" class="hidden" name="q[36]" value="6" />
-                        <input type="radio" class="hidden" name="q[36]" value="7" />
 
-                        <div class="sub_reveal_option">
-                            <p class="rob_light">Please enter your make of phone:</p>
+                        <div class="reveal_option">
                             <input type="text" value="" id="q_36" name="q[36_b]" class="text"/>
                         </div>
 
@@ -1109,9 +1093,54 @@
 
                     <section>
 
-                        <p class="rob_light"><span class="q_num">37</span> Which of the following games are you most looking forward to in 2014<span class="multiple">Can select multiple answers</span></p>
+                        <p class="rob_light"><span class="q_num">37</span> Do you play games on your phone?</p>
 
                         <div class="question slider_circles radio slt_single" data-question="37">
+                            <div class="radio_btn"><a href="#_" data-num="1" class="reveal_anchor"></a><p>Yes</p></div>
+                            <div class="radio_btn"><a href="#_" data-num="2"></a><p>No</p></div>
+                        </div>
+
+                        <div class="reveal_option">
+                            
+                            <p class="rob_light">Which make of phone do you have?</p>
+                            
+                            <div class="question slider_circles radio slt_single" data-question="37">
+                            
+                                <div class="radio_btn"><a href="#_" data-num="3"></a><p>iOS</p></div>
+                                <div class="radio_btn"><a href="#_" data-num="4"></a><p>Android</p></div>
+                                <div class="radio_btn"><a href="#_" data-num="5"></a><p>Blackberry</p></div>
+                                <div class="radio_btn"><a href="#_" data-num="6"></a><p>Windows</p></div>
+                                <div class="radio_btn"><a href="#_" data-num="7" class="sub_reveal_anchor"></a><p>Other</p></div>
+
+                            </div>
+
+                        </div>
+
+                        <input type="radio" class="hidden" name="q[37]" value="1" />
+                        <input type="radio" class="hidden" name="q[37]" value="2" />
+                        <input type="radio" class="hidden" name="q[37]" value="3" />
+                        <input type="radio" class="hidden" name="q[37]" value="4" />
+                        <input type="radio" class="hidden" name="q[37]" value="5" />
+                        <input type="radio" class="hidden" name="q[37]" value="6" />
+                        <input type="radio" class="hidden" name="q[37]" value="7" />
+
+                        <div class="sub_reveal_option">
+                            <p class="rob_light">Please enter your make of phone:</p>
+                            <input type="text" value="" id="q_37" name="q[37_b]" class="text"/>
+                        </div>
+
+                        <div class="divider_strip">
+                            <img src="img/drop_shadow-divider.jpg" alt="Question diver with drop shadow">
+                        </div>
+
+
+                    </section>
+
+                    <section>
+
+                        <p class="rob_light"><span class="q_num">38</span> Which of the following games are you most looking forward to in 2014<span class="multiple">Can select multiple answers</span></p>
+
+                        <div class="question slider_circles radio slt_single" data-question="38">
                             <div class="radio_btn"><a href="#_" data-num="1"></a><p>Alien Isolation</p></div>
                             <div class="radio_btn"><a href="#_" data-num="2"></a><p>A New Call of Duty</p></div>
                             <div class="radio_btn"><a href="#_" data-num="3"></a><p>Watch Dogs</p></div>
@@ -1129,21 +1158,21 @@
                             <div class="radio_btn"><a href="#_" data-num="15"></a><p>The Witcher 3</p></div>
                         </div>
 
-                        <input type="radio" class="hidden" name="q[37]" value="1" />
-                        <input type="radio" class="hidden" name="q[37]" value="2" />
-                        <input type="radio" class="hidden" name="q[37]" value="3" />
-                        <input type="radio" class="hidden" name="q[37]" value="4" />
-                        <input type="radio" class="hidden" name="q[37]" value="5" />
-                        <input type="radio" class="hidden" name="q[37]" value="6" />
-                        <input type="radio" class="hidden" name="q[37]" value="7" />
-                        <input type="radio" class="hidden" name="q[37]" value="8" />
-                        <input type="radio" class="hidden" name="q[37]" value="9" />
-                        <input type="radio" class="hidden" name="q[37]" value="10" />
-                        <input type="radio" class="hidden" name="q[37]" value="11" />
-                        <input type="radio" class="hidden" name="q[37]" value="12" />
-                        <input type="radio" class="hidden" name="q[37]" value="13" />
-                        <input type="radio" class="hidden" name="q[37]" value="14" />
-                        <input type="radio" class="hidden" name="q[37]" value="15" />
+                        <input type="checkbox" class="hidden" name="q[38]" value="1" />
+                        <input type="checkbox" class="hidden" name="q[38]" value="2" />
+                        <input type="checkbox" class="hidden" name="q[38]" value="3" />
+                        <input type="checkbox" class="hidden" name="q[38]" value="4" />
+                        <input type="checkbox" class="hidden" name="q[38]" value="5" />
+                        <input type="checkbox" class="hidden" name="q[38]" value="6" />
+                        <input type="checkbox" class="hidden" name="q[38]" value="7" />
+                        <input type="checkbox" class="hidden" name="q[38]" value="8" />
+                        <input type="checkbox" class="hidden" name="q[38]" value="9" />
+                        <input type="checkbox" class="hidden" name="q[38]" value="10" />
+                        <input type="checkbox" class="hidden" name="q[38]" value="11" />
+                        <input type="checkbox" class="hidden" name="q[38]" value="12" />
+                        <input type="checkbox" class="hidden" name="q[38]" value="13" />
+                        <input type="checkbox" class="hidden" name="q[38]" value="14" />
+                        <input type="checkbox" class="hidden" name="q[38]" value="15" />
 
                         <div class="divider_strip">
                             <img src="img/drop_shadow-divider.jpg" alt="Question diver with drop shadow">
@@ -1154,17 +1183,17 @@
 
                    <section>
 
-                        <p class="rob_light"><span class="q_num">38</span> How regularly do you read the video games content on AskMen?</p>
+                        <p class="rob_light"><span class="q_num">39</span> How regularly do you read the video games content on AskMen?</p>
 
-                        <div class="question slider_circles radio slt_single" data-question="38">
+                        <div class="question slider_circles radio slt_single" data-question="39">
                             <div class="radio_btn"><a href="#_" data-num="1"></a><p>Weekly</p></div>
                             <div class="radio_btn"><a href="#_" data-num="2"></a><p>Monthly</p></div>
                             <div class="radio_btn"><a href="#_" data-num="3"></a><p>Never</p></div>
                         </div>
 
-                        <input type="radio" class="hidden" name="q[38]" value="1" />
-                        <input type="radio" class="hidden" name="q[38]" value="2" />
-                        <input type="radio" class="hidden" name="q[38]" value="3" />
+                        <input type="radio" class="hidden" name="q[39]" value="1" />
+                        <input type="radio" class="hidden" name="q[39]" value="2" />
+                        <input type="radio" class="hidden" name="q[39]" value="3" />
 
                         <div class="divider_strip">
                             <img src="img/drop_shadow-divider.jpg" alt="Question diver with drop shadow">
@@ -1175,15 +1204,15 @@
 
                    <section>
 
-                        <p class="rob_light"><span class="q_num">39</span> Would you like to see more video games content on AskMen?</p>
+                        <p class="rob_light"><span class="q_num">40</span> Would you like to see more video games content on AskMen?</p>
 
-                        <div class="question slider_circles radio slt_single" data-question="39">
+                        <div class="question slider_circles radio slt_single" data-question="40">
                             <div class="radio_btn"><a href="#_" data-num="1"></a><p>Yes</p></div>
                             <div class="radio_btn"><a href="#_" data-num="2"></a><p>No</p></div>
                         </div>
 
-                        <input type="radio" class="hidden" name="q[39]" value="1" />
-                        <input type="radio" class="hidden" name="q[39]" value="2" />
+                        <input type="radio" class="hidden" name="q[40]" value="1" />
+                        <input type="radio" class="hidden" name="q[40]" value="2" />
 
                         <div class="divider_strip">
                             <img src="img/drop_shadow-divider.jpg" alt="Question diver with drop shadow">
@@ -1195,9 +1224,9 @@
 
                    <section>
 
-                        <p class="rob_light"><span class="q_num">40</span> I have children</p>
+                        <p class="rob_light"><span class="q_num">41</span> I have children</p>
 
-                        <div class="question slider_circles radio slt_single" data-question="40">
+                        <div class="question slider_circles radio slt_single" data-question="41">
                             <div class="radio_btn"><a href="#_" data-num="1" class="reveal_anchor"></a><p>Yes</p></div>
                             <div class="radio_btn"><a href="#_" data-num="2"></a><p>No</p></div>
                         </div>
@@ -1211,10 +1240,10 @@
                             </div>
                         </div>
 
-                        <input type="radio" class="hidden" name="q[40]" value="1" />
-                        <input type="radio" class="hidden" name="q[40]" value="2" />
-                        <input type="radio" class="hidden" name="q[40]" value="3" />
-                        <input type="radio" class="hidden" name="q[40]" value="4" />
+                        <input type="radio" class="hidden" name="q[41]" value="1" />
+                        <input type="radio" class="hidden" name="q[41]" value="2" />
+                        <input type="radio" class="hidden" name="q[41]" value="3" />
+                        <input type="radio" class="hidden" name="q[41]" value="4" />
 
                         <div class="divider_strip">
                             <img src="img/drop_shadow-divider.jpg" alt="Question diver with drop shadow">
@@ -1225,15 +1254,15 @@
 
                    <section>
 
-                        <p class="rob_light"><span class="q_num">41</span> Have you signed up for any of the following <span class="multiple">Can select multiple answers</span></p>
+                        <p class="rob_light"><span class="q_num">42</span> Have you signed up for any of the following <span class="multiple">Can select multiple answers</span></p>
 
-                        <div class="question slider_circles radio" data-question="41">
+                        <div class="question slider_circles radio" data-question="42">
                             <div class="radio_btn"><a href="#_" data-num="1"></a><p>Playstation Plus</p></div>
                             <div class="radio_btn"><a href="#_" data-num="2"></a><p>Xbox Gold</p></div>
                         </div>
 
-                        <input type="radio" class="hidden" name="q[41]" value="1" />
-                        <input type="radio" class="hidden" name="q[41]" value="2" />
+                        <input type="radio" class="hidden" name="q[42]" value="1" />
+                        <input type="radio" class="hidden" name="q[42]" value="2" />
 
                         <div class="divider_strip">
                             <img src="img/drop_shadow-divider.jpg" alt="Question diver with drop shadow">
